@@ -6065,7 +6065,7 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
         <div class="cp-pkg-note">คูปอง <strong>1 ใบ</strong> ใช้ได้ <strong>1 ครั้ง</strong> กับร้านที่เลือก</div>
       </div>
     </div>
-    <div class="plist" style="gap:7px;margin-top:12px;margin-bottom:0"><button type="button" class="srow" data-shop="s1"><img src="https://i.postimg.cc/yd9WNpyy/Coconut-Ice-Cream-with-Palm-Fruit-(1).png" alt=""><div class="x"><b>ร้านณัฐพรไอศครีม</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 200 ม.</div><span class="of">คูปองส่วนลด 10%</span></div><span class="rd"></span></button><button type="button" class="srow" data-shop="s2"><img src="https://i.postimg.cc/htWXkB8G/Add-a-subheading-(1).png" alt="ร้านอุดมโภชนาการ"><div class="x"><b>ร้านอุดมโภชนาการ</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 350 ม.</div><span class="of">คูปองส่วนลด 10%</span></div><span class="rd"></span></button></div>
+    <div class="plist" style="gap:7px;margin-top:12px;margin-bottom:0"><button type="button" class="srow" data-shop="s1"><img src="https://i.postimg.cc/yd9WNpyy/Coconut-Ice-Cream-with-Palm-Fruit-(1).png" alt=""><div class="x"><b>ร้านณัฐพรไอศครีม</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 200 ม.</div><span class="of">คูปองส่วนลดค่าอาหาร 10%</span></div><span class="rd"></span></button><button type="button" class="srow" data-shop="s2"><img src="https://i.postimg.cc/htWXkB8G/Add-a-subheading-(1).png" alt="ร้านอุดมโภชนาการ"><div class="x"><b>ร้านอุดมโภชนาการ</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 350 ม.</div><span class="of">คูปองส่วนลดค่าอาหาร 10%</span></div><span class="rd"></span></button></div>
     <button type="button" class="cpbtn" id="cpUse">ใช้คูปองร้านที่เลือก <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
   </section>
 
@@ -6412,13 +6412,13 @@ document.querySelectorAll('[data-src]').forEach(function(e){
         s1: {
           img: 'https://i.postimg.cc/yd9WNpyy/Coconut-Ice-Cream-with-Palm-Fruit-(1).png',
           name: 'ร้านณัฐพรไอศครีม',
-          offer: 'คูปองส่วนลด 10%',
+          offer: 'คูปองส่วนลดค่าอาหาร 10%',
           addr: 'ถนนมหาราช แขวงพระบรมมหาราชวัง เขตพระนคร กรุงเทพฯ',
         },
         s2: {
           img: 'https://i.postimg.cc/htWXkB8G/Add-a-subheading-(1).png',
           name: 'ร้านอุดมโภชนาการ',
-          offer: 'คูปองส่วนลด 10%',
+          offer: 'คูปองส่วนลดค่าอาหาร 10%',
           addr: 'ถนนพระอาทิตย์ แขวงชนะสงคราม เขตพระนคร กรุงเทพฯ',
         },
         s3: {
@@ -6609,6 +6609,7 @@ document.querySelectorAll('[data-src]').forEach(function(e){
         : 'ใช้คูปองร้านที่เลือก <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg>';
   }
   // เปิดหน้าคูปองพร้อม QR ของร้านที่เลือก
+  var COUPON_DETAIL_ICON = '<svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ไอคอนคูปอง"><path d="M5 7H27C28.1 7 29 7.9 29 9V12.2C26.8 12.5 25.2 14 25.2 16S26.8 19.5 29 19.8V23C29 24.1 28.1 25 27 25H5C3.9 25 3 24.1 3 23V19.8C5.2 19.5 6.8 18 6.8 16S5.2 12.5 3 12.2V9C3 7.9 3.9 7 5 7Z" fill="#F9F6FF" stroke="#848afc" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 7V25" stroke="#B6A4FF" stroke-width="1.6" stroke-dasharray="2.2 2.8"/><path d="M16 13H24M16 18H21" stroke="#848afc" stroke-width="2.3" stroke-linecap="round"/></svg>';
   function cpShow(type, k) {
     var d = CP[type][k];
     cpFrom = type === 'pkg' ? 'cppkg' : 'cppar';
@@ -6622,15 +6623,15 @@ document.querySelectorAll('[data-src]').forEach(function(e){
       d.addr || 'ย่านพระนคร กรุงเทพฯ (ห่างจากเส้นทางทริป)';
     document.getElementById('dOff').innerHTML =
       type === 'pkg'
-        ? d.offer + (k === 's1' ? '' : '<small>(มูลค่า 20 บาท)</small>')
+        ? d.offer
         : d.offer + '<small>' + d.offer2 + '</small>';
     document.getElementById('dOffIc').innerHTML =
       type === 'pkg'
-        ? '<svg width="26" height="30" viewBox="0 0 24 28" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><path d="M6 2v8a3 3 0 0 0 6 0V2M9 2v24M18 2c-2 1-3 4-3 8s1 5 3 5v11"/></svg>'
+        ? COUPON_DETAIL_ICON
         : '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg>';
     document.getElementById('dHint').textContent =
       type === 'pkg'
-        ? (k === 's1' ? 'แสดงคูปองนี้ต่อพนักงานเพื่อรับส่วนลด 10%' : 'แสดงคูปองนี้ต่อพนักงานเพื่อแลกรับอาหาร')
+        ? 'แสดงคูปองนี้ต่อพนักงานเพื่อรับส่วนลด 10%'
         : 'แสดงคิวอาร์นี้ต่อพนักงานเพื่อรับส่วนลด';
     var code =
       type === 'pkg'
@@ -6644,7 +6645,7 @@ document.querySelectorAll('[data-src]').forEach(function(e){
         : 'ใช้ได้ไม่จำกัดจำนวนครั้ง';
     document.getElementById('dCondList').innerHTML =
       type === 'pkg'
-        ? '<li>แพ็กเกจของคุณมีคูปอง ' + MAXR + ' ใบ สำหรับร้านที่ร่วมรายการ</li><li>เมื่อใช้ครบ ' + MAXR + ' ใบแล้ว จะไม่สามารถใช้กับร้านอื่นได้อีก</li><li>1 คูปองต่อ 1 ร้าน แลกได้ 1 ครั้ง ไม่สามารถแลกเปลี่ยนเป็นเงินสด</li>'
+        ? '<li>แพ็กเกจของคุณสามารถใช้ได้ ' + MAXR + ' สิทธิ สำหรับร้านค้าที่ร่วมรายการ</li><li>1 คูปองต่อ 1 ร้านค้า แลกได้ 1 ครั้ง ไม่สามารถแลกเปลี่ยนเป็นเงินสดได้</li>'
         : '<li>ใช้ได้กับร้านพันธมิตรที่ร่วมรายการ ไม่จำกัดจำนวนครั้ง</li><li>ส่วนลดเป็นไปตามเงื่อนไขของแต่ละร้าน</li><li>ไม่หักสิทธิ์คูปองจากแพ็กเกจ</li>';
     document.getElementById('dCond').classList.remove('open');
     go('cpdet');
