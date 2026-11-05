@@ -42,14 +42,14 @@
 
 /* ===== 0. พื้นฐาน: ตัวแปรสี ฟอนต์ และค่าเริ่มต้นของปุ่ม/ลิงก์/รูป ===== */
 :root {
-  --p: #7b27ea;
-  --p-dk: #6420d4;
-  --p-soft: #f1e8fe;
-  --p-line: #c9a9f6;
-  --ink: #1a0b39;
-  --ink2: #2a0d6e;
-  --mute: #4f4870;
-  --line: #eee8f7;
+  --p: #848afc;
+  --p-dk: #848afc;
+  --p-soft: #efe9fd;
+  --p-line: #c6b0f8;
+  --ink: #111111;
+  --ink2: #111111;
+  --mute: #5f5f6b;
+  --line: #ebe3fc;
 }
 * {
   box-sizing: border-box;
@@ -62,7 +62,7 @@ body {
 body {
   font-family: 'Prompt', 'Loma', system-ui, sans-serif;
   color: var(--ink);
-  background: #e9e4f3;
+  background: #e5dbfc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -209,13 +209,13 @@ img {
   font-weight: 700;
   font-size: 29px;
   line-height: 1;
-  color: var(--p);
+  color: #111111;
   letter-spacing: -0.2px;
 }
 .brand .sub {
   font-weight: 600;
   font-size: 10.5px;
-  color: #2a1a66;
+  color: #111111;
   margin-top: 2px;
   line-height: 1;
 }
@@ -254,7 +254,7 @@ img {
 .more {
   font-size: 13.5px;
   font-weight: 500;
-  color: var(--p);
+  color: #111111;
   display: flex;
   align-items: center;
   gap: 3px;
@@ -271,7 +271,7 @@ img {
   bottom: 0;
   height: 84px;
   background: #fff;
-  border-top: 1px solid #efeaf6;
+  border-top: 1px solid #ebe4fd;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding: 6px 8px 22px;
@@ -287,7 +287,7 @@ img {
   gap: 2px;
   font-size: 12.5px;
   font-weight: 500;
-  color: #55516a;
+  color: #5f5f6b;
   border-radius: 14px;
   margin: 0 2px;
   padding: 0;
@@ -301,7 +301,7 @@ img {
 }
 .tab.on {
   background: var(--p-soft);
-  color: var(--p);
+  color: #111111;
   font-weight: 600;
 }
 .tab.on .o {
@@ -321,7 +321,7 @@ img {
   border: 1.5px solid var(--p-line);
   border-radius: 99px;
   background: #fff;
-  color: #4a1fa8;
+  color: #111111;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -348,7 +348,7 @@ img {
   width: 5px;
   height: 5px;
   border-radius: 3px;
-  background: #dcd3ee;
+  background: #c6b0f8;
 }
 .dots span.on {
   width: 10px;
@@ -367,7 +367,7 @@ img {
 .pk {
   position: relative;
   background: #fff;
-  border: 1px solid #eee9f6;
+  border: 1px solid #ebe3fc;
   border-radius: 12px;
   padding: 5px 5px 7px;
   display: flex;
@@ -396,13 +396,13 @@ img {
 }
 .pk .s {
   font-size: 9.5px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 1px;
   line-height: 1.3;
 }
 .pk .tag {
   align-self: flex-start;
-  background: #8a46e8;
+  background: #967bfe;
   color: #fff;
   font-size: 9px;
   font-weight: 500;
@@ -419,11 +419,11 @@ img {
 .pk .pr b {
   font-size: 18px;
   font-weight: 700;
-  color: var(--p);
+  color: #111111;
 }
 .pk .pr span {
   font-size: 10px;
-  color: #2e2a40;
+  color: #111111;
 }
 .pk ul {
   list-style: none;
@@ -439,7 +439,7 @@ img {
   align-items: center;
   font-size: 8.4px;
   line-height: 1.25;
-  color: #2e2a40;
+  color: #111111;
 }
 .pk li svg {
   flex: 0 0 10px;
@@ -450,7 +450,7 @@ img {
   border: 0;
   border-radius: 13px;
   background: var(--p-soft);
-  color: var(--p);
+  color: #111111;
   font-size: 10.5px;
   font-weight: 600;
   display: flex;
@@ -459,9 +459,9 @@ img {
   gap: 4px;
 }
 .pk.ult {
-  border: 1.5px solid #b88cf3;
-  background: #fbf8ff;
-  box-shadow: 0 4px 14px rgba(123, 39, 234, 0.14);
+  border: 1.5px solid #a893f9;
+  background: #faf9fe;
+  box-shadow: 0 4px 14px rgba(132, 138, 252, 0.14);
 }
 .pk.ult .cta {
   background: var(--p-dk);
@@ -473,7 +473,7 @@ img {
   align-items: center;
   font-size: 9px;
   font-weight: 600;
-  color: #6a2ad8;
+  color: #111111;
   line-height: 1.25;
   margin-top: 8px;
 }
@@ -511,7 +511,7 @@ img {
   height: 42px;
   border-radius: 21px;
   background: #fff;
-  border: 1px solid #ece7f5;
+  border: 1px solid #e9e0fc;
   box-shadow: 0 2px 8px rgba(60, 30, 120, 0.06);
   display: flex;
   align-items: center;
@@ -529,7 +529,7 @@ img {
   background: none;
 }
 .search input::placeholder {
-  color: #6b6390;
+  color: #5f5f6b;
 }
 .s-h {
   margin: 23px 13px 0;
@@ -558,8 +558,8 @@ img {
   padding: 0 10px 0 13px;
   border: 0;
   border-radius: 15px;
-  background: #ece6fd;
-  color: #4c1fb0;
+  background: #ede6fd;
+  color: #111111;
   font-size: 12.5px;
   font-weight: 500;
   display: flex;
@@ -591,7 +591,7 @@ img {
   justify-content: space-between;
   padding: 0 8px 0 10px;
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
 }
 .sc .ft span {
   display: flex;
@@ -607,7 +607,7 @@ img {
 
 /* ===== หน้า My Trips: หัวข้อ แท็บทริปปัจจุบัน/เสร็จสิ้น หน้าว่าง ===== */
 #trips {
-  background: #fbf6fd;
+  background: #f8f5fe;
 }
 .ttl {
   position: relative;
@@ -636,7 +636,7 @@ img {
   margin: 14px 17px 0;
   height: 35px;
   border-radius: 18px;
-  background: #f5eefc;
+  background: #f2edfd;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -655,7 +655,7 @@ img {
 .seg button.on {
   background: var(--p);
   color: #fff;
-  box-shadow: 0 4px 10px rgba(123, 39, 234, 0.25);
+  box-shadow: 0 4px 10px rgba(132, 138, 252, 0.25);
 }
 .empty {
   text-align: center;
@@ -689,7 +689,7 @@ img {
 
 /* ===== หน้า Community: ปุ่มกรอง การ์ดโพสต์ ปุ่มเขียนโพสต์ ===== */
 #community {
-  background: #f9f7fb;
+  background: #f7f4fe;
 }
 .c-ttl {
   position: relative;
@@ -722,7 +722,7 @@ img {
 .chip {
   height: 29px;
   border-radius: 15px;
-  border: 1px solid #e6dff3;
+  border: 1px solid #e2d7fb;
   background: #fff;
   color: var(--ink2);
   font-size: 13px;
@@ -742,7 +742,7 @@ img {
   margin: 13px 11px 0;
   background: #fff;
   border-radius: 12px;
-  border: 1px solid #f0ecf6;
+  border: 1px solid #ede5fd;
   box-shadow: 0 2px 8px rgba(60, 30, 120, 0.05);
   padding: 10px 7px 4px 7px;
 }
@@ -767,7 +767,7 @@ img {
 }
 .ph .t {
   font-size: 11.5px;
-  color: #6b6880;
+  color: #5f5f6b;
   line-height: 1.1;
 }
 .ph .dots3 {
@@ -777,7 +777,7 @@ img {
   margin: 6px 5px 0;
   font-size: 13.2px;
   line-height: 1.55;
-  color: #2e2a40;
+  color: #111111;
 }
 .pimg {
   margin-top: 9px;
@@ -796,7 +796,7 @@ img {
   height: 34px;
   padding: 0 0 0 8px;
   font-size: 13px;
-  color: #2e2a40;
+  color: #111111;
 }
 .pact span {
   display: flex;
@@ -812,11 +812,11 @@ img {
   height: 52px;
   border: 0;
   border-radius: 50%;
-  background: #8a4be8;
+  background: #967bfe;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 18px rgba(123, 39, 234, 0.35);
+  box-shadow: 0 8px 18px rgba(132, 138, 252, 0.35);
   z-index: 9;
   display: none;
 }
@@ -826,7 +826,7 @@ img {
 
 /* ===== หน้า Profile: รูป ชื่อ ตัวเลขสถิติ เมนูตั้งค่า ===== */
 #profile {
-  background: #faf8ff;
+  background: #faf9fe;
 }
 .p-ttl {
   position: relative;
@@ -876,8 +876,8 @@ img {
   padding: 0 10px 0 13px;
   border: 0;
   border-radius: 14px;
-  background: #ede4fd;
-  color: #6a2ad8;
+  background: #ece5fd;
+  color: #111111;
   font-size: 12px;
   font-weight: 500;
   display: inline-flex;
@@ -909,7 +909,7 @@ img {
 }
 .st small {
   font-size: 10.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 .p-sec {
   margin: 18px 0 0;
@@ -952,13 +952,13 @@ img {
   right: 14px;
   top: 0;
   height: 1px;
-  background: #eee9f5;
+  background: #eae2fc;
 }
 .row .ic {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: #f1eafd;
+  background: #f0eafd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -992,7 +992,7 @@ img {
   height: 28px;
   border-radius: 50%;
   border: 0;
-  background: #f1eafe;
+  background: #f1ebfd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1001,7 +1001,7 @@ img {
 }
 /* ===== หน้าแพ็กเกจทั้งหมด (Explorer / Fan / Ultimate Fan Pass) ===== */
 #packages {
-  background: #fcfbfe;
+  background: #fcfaff;
 }
 .pg-h {
   display: flex;
@@ -1056,7 +1056,7 @@ img {
 }
 .pcard .s {
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 1px;
 }
 .pcard .pr {
@@ -1072,7 +1072,7 @@ img {
 }
 .pcard .pr span {
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
 }
 .pcard ul {
   list-style: none;
@@ -1087,7 +1087,7 @@ img {
   align-items: center;
   gap: 6px;
   font-size: 10.6px;
-  color: #2e2a40;
+  color: #111111;
   line-height: 1.25;
 }
 .pcard li svg {
@@ -1112,36 +1112,36 @@ img {
   border: 0;
 }
 .pcard.exp {
-  background: #f5f0ff;
+  background: #f5f1fe;
 }
 .pcard.exp .pr b {
-  color: #7b27ea;
+  color: #111111;
 }
 .pcard.exp .btn {
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
-  box-shadow: 0 4px 10px rgba(123, 39, 234, 0.3);
+  box-shadow: 0 4px 10px rgba(132, 138, 252, 0.3);
 }
 .pcard.fan {
   background: #fdf0f5;
 }
 .pcard.fan .pr b {
-  color: #e0357e;
+  color: #111111;
 }
 .pcard.fan .btn {
   background: #fcdce9;
-  color: #d72c70;
+  color: #111111;
   border: 1px solid #f5a9c8;
 }
 .pcard.ult {
   background: #eff8f8;
 }
 .pcard.ult .pr b {
-  color: #159a90;
+  color: #111111;
 }
 .pcard.ult .btn {
   background: #d3f1ee;
-  color: #118a80;
+  color: #111111;
   border: 1px solid #9fdcd5;
 }
 .crown {
@@ -1152,7 +1152,7 @@ img {
   align-items: center;
   gap: 4px;
   background: #fce68a;
-  color: #3a2a00;
+  color: #111111;
   font-size: 10.5px;
   font-weight: 600;
   border-radius: 10px;
@@ -1182,7 +1182,7 @@ img {
   text-align: center;
   font-size: 13.5px;
   line-height: 1.6;
-  color: #2e2a40;
+  color: #111111;
 }
 .okc {
   margin: 18px 17px 0 17px;
@@ -1203,8 +1203,8 @@ img {
 .okc .tg {
   display: inline-block;
   font-size: 9.5px;
-  color: #7b27ea;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 9px;
   padding: 1px 8px;
 }
@@ -1218,19 +1218,19 @@ img {
 }
 .okc small {
   font-size: 12px;
-  color: #2e2a40;
+  color: #111111;
 }
 .okc .fr {
   margin-left: auto;
   padding: 6px 10px 6px 18px;
-  border-left: 1px solid #e6e0f0;
+  border-left: 1px solid #e1d5fb;
   font-size: 27px;
   font-weight: 700;
-  color: #8a3cf0;
+  color: #111111;
 }
 .oki {
   margin: 13px 17px 0;
-  background: #f7f3fd;
+  background: #f6f2fe;
   border-radius: 14px;
   padding: 10px 16px;
   display: flex;
@@ -1262,16 +1262,16 @@ img {
 }
 .bigbtn.pri {
   margin-top: 22px;
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
-  box-shadow: 0 6px 16px rgba(123, 39, 234, 0.3);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
 }
 .bigbtn.sec {
   margin-top: 12px;
   height: 42px;
   background: #fff;
-  color: #6e22e0;
-  border: 1.5px solid #b48af2;
+  color: #111111;
+  border: 1.5px solid #a893f9;
 }
 .wave {
   position: absolute;
@@ -1279,7 +1279,7 @@ img {
   right: 0;
   bottom: 0;
   height: 70px;
-  background: #f3edfc;
+  background: #f1ecfd;
   border-radius: 60% 60% 0 0/40px 40px 0 0;
   pointer-events: none;
 }
@@ -1316,9 +1316,9 @@ img {
   width: calc(100% - 26px);
   height: 48px;
   border-radius: 24px;
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
-  box-shadow: 0 6px 16px rgba(123, 39, 234, 0.3);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
 }
 .toast {
   position: absolute;
@@ -1344,7 +1344,7 @@ img {
 /* ===== สร้างทริป ขั้นที่ 1: แถบขั้นตอน การ์ดแพ็กเกจ การ์ดเลือกซีรีส์ ===== */
 #create,
 #review {
-  background: #fbf8ff;
+  background: #faf9fe;
 }
 .ct-h {
   display: flex;
@@ -1375,13 +1375,13 @@ img {
   left: 111px;
   right: 111px;
   height: 2px;
-  background: #dcd3ee;
+  background: #c6b0f8;
 }
 .stepper .ln i {
   position: absolute;
   inset: 0;
   width: 0;
-  background: #7b27ea;
+  background: #848afc;
 }
 .stepper.two .ln i {
   width: 100%;
@@ -1409,16 +1409,16 @@ img {
   font-size: 12px;
   font-weight: 600;
   color: #fff;
-  background: #c8bfdd;
+  background: #c6b0f8;
 }
 .stp.on span {
-  background: #7b27ea;
+  background: #848afc;
 }
 .stp small {
   display: block;
   margin-top: 5px;
   font-size: 11px;
-  color: #6b6880;
+  color: #5f5f6b;
 }
 .stp.on small {
   color: var(--ink);
@@ -1443,8 +1443,8 @@ img {
 .excard .tg {
   display: inline-block;
   font-size: 9.5px;
-  color: #7b27ea;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 9px;
   padding: 1px 8px;
 }
@@ -1459,7 +1459,7 @@ img {
 .excard small {
   display: block;
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
 }
 .excard .lm {
   display: flex;
@@ -1474,12 +1474,12 @@ img {
   margin-left: auto;
   align-self: center;
   padding: 5px 9px;
-  border-left: 1px solid #e6e0f0;
+  border-left: 1px solid #e1d5fb;
 }
 .excard .trial span {
   display: block;
-  background: #efe5fd;
-  color: #7b27ea;
+  background: #ede5fd;
+  color: #111111;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.3;
@@ -1500,7 +1500,7 @@ img {
 .pick-h p {
   margin: 2px 0 0;
   font-size: 11.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 .sgrid2 {
   display: grid;
@@ -1522,7 +1522,7 @@ img {
   height: 142px;
 }
 .pc.on {
-  border-color: #8a4be8;
+  border-color: #967bfe;
 }
 .pc img {
   width: 100%;
@@ -1543,8 +1543,8 @@ img {
   justify-content: center;
 }
 .pc.on .cb {
-  background: #7b27ea;
-  border-color: #7b27ea;
+  background: #848afc;
+  border-color: #848afc;
 }
 .pc .cb svg {
   display: none;
@@ -1569,8 +1569,8 @@ img {
 .pc .tags span {
   white-space: nowrap;
   font-size: 9.5px;
-  color: #7b27ea;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 9px;
   padding: 1px 8px;
 }
@@ -1579,7 +1579,7 @@ img {
   align-items: center;
   gap: 4px;
   font-size: 10.5px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 5px;
 }
 .flowbtn {
@@ -1592,11 +1592,11 @@ img {
   width: calc(100% - 26px);
   border: 0;
   border-radius: 21px;
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   font-size: 15.5px;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(123, 39, 234, 0.3);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
 }
 .skyb {
   display: block;
@@ -1619,7 +1619,7 @@ img {
 .rv-h p {
   margin: 2px 0 0;
   font-size: 12.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 .rvs {
   margin: 10px 13px 0 13px;
@@ -1639,7 +1639,7 @@ img {
 }
 .rvs div {
   padding-left: 14px;
-  border-left: 1px solid #e6e0f0;
+  border-left: 1px solid #e1d5fb;
   height: 46px;
   display: flex;
   flex-direction: column;
@@ -1651,7 +1651,7 @@ img {
   gap: 6px;
   font-size: 15px;
   font-weight: 700;
-  color: #7b27ea;
+  color: #111111;
 }
 .rvs small {
   font-size: 13.5px;
@@ -1672,7 +1672,7 @@ img {
   top: 10px;
   bottom: 30px;
   width: 2px;
-  background: #7b27ea;
+  background: #848afc;
 }
 .stop {
   position: relative;
@@ -1689,7 +1689,7 @@ img {
   left: 56px;
   right: 0;
   height: 1px;
-  background: #f0ebf7;
+  background: #ede5fd;
 }
 .stop .num {
   position: relative;
@@ -1697,7 +1697,7 @@ img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: #7b27ea;
+  background: #848afc;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -1730,7 +1730,7 @@ img {
   display: block;
   font-size: 9.2px;
   line-height: 1.3;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 1px;
 }
 .stop em {
@@ -1739,7 +1739,7 @@ img {
   gap: 5px;
   font-style: normal;
   font-size: 9.5px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 3px;
 }
 /* ===== ทริปที่กำลังทำ: การ์ดทริป รายการจุด ปุ่มทำภารกิจ ความคืบหน้า คูปอง ===== */
@@ -1780,7 +1780,7 @@ img {
   gap: 6px;
   margin-top: 6px;
   font-size: 9.5px;
-  color: #2e2a40;
+  color: #111111;
   white-space: nowrap;
 }
 .atc .m i {
@@ -1823,7 +1823,7 @@ img {
   top: 22px;
   bottom: 26px;
   width: 2px;
-  background: #7b27ea;
+  background: #848afc;
 }
 .ast {
   display: flex;
@@ -1840,7 +1840,7 @@ img {
   left: 52px;
   right: 6px;
   height: 1px;
-  background: #f0ebf7;
+  background: #ede5fd;
 }
 .ast .num {
   position: relative;
@@ -1848,7 +1848,7 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #7b27ea;
+  background: #848afc;
   color: #fff;
   font-size: 12px;
   font-weight: 600;
@@ -1880,7 +1880,7 @@ img {
   display: block;
   font-size: 8.3px;
   line-height: 1.3;
-  color: #2e2a40;
+  color: #111111;
 }
 .mis {
   flex: 0 0 auto;
@@ -1888,8 +1888,8 @@ img {
   padding: 0 8px;
   border: 0;
   border-radius: 13px;
-  background: #f1e8fe;
-  color: #6e22e0;
+  background: #efe9fd;
+  color: #111111;
   font-size: 10px;
   font-weight: 600;
   display: flex;
@@ -1927,7 +1927,7 @@ img {
   right: 6px;
   top: 7px;
   height: 2px;
-  background: #d9ccf5;
+  background: #c6b0f8;
 }
 .prog .bar .dots5 {
   position: relative;
@@ -1938,12 +1938,12 @@ img {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid #a98aee;
+  border: 2px solid #a893f9;
   background: #fff;
 }
 .prog .bar .dots5 span.ok {
-  background: #7b27ea;
-  border-color: #7b27ea;
+  background: #848afc;
+  border-color: #848afc;
 }
 .prog .lb {
   position: absolute;
@@ -1965,7 +1965,7 @@ img {
 }
 .coupon {
   margin: 8px 11px 0;
-  background: #f3ecfd;
+  background: #f1ecfd;
   border-radius: 14px;
   height: 42px;
   display: flex;
@@ -1980,17 +1980,17 @@ img {
   display: block;
   font-size: 13px;
   font-weight: 700;
-  color: #6e22e0;
+  color: #111111;
   line-height: 1.2;
 }
 .coupon small {
   font-size: 9.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 
 /* ===== หน้าภารกิจ: ความคืบหน้า เช็กอิน ถ่ายรูปตามฉาก รางวัล ===== */
 #mission {
-  background: #fbf9fe;
+  background: #faf9fe;
 }
 .mhero {
   position: relative;
@@ -2039,7 +2039,7 @@ img {
   right: 10px;
   top: 9px;
   height: 2px;
-  background: #d9ccf5;
+  background: #c6b0f8;
 }
 .mp-bar .fill {
   position: absolute;
@@ -2047,7 +2047,7 @@ img {
   top: 9px;
   height: 2px;
   width: 0;
-  background: #7b27ea;
+  background: #848afc;
   transition: 0.3s;
 }
 .mp-bar span {
@@ -2056,15 +2056,15 @@ img {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 2px solid #a98aee;
+  border: 2px solid #a893f9;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .mp-bar span.ok {
-  background: #7b27ea;
-  border-color: #7b27ea;
+  background: #848afc;
+  border-color: #848afc;
 }
 .mp-bar span svg {
   display: none;
@@ -2077,7 +2077,7 @@ img {
   justify-content: space-between;
   margin: 6px 8px 0 14px;
   font-size: 11.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 .mp-lb div {
   display: flex;
@@ -2093,7 +2093,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #f1eafd;
+  background: #f0eafd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2111,7 +2111,7 @@ img {
 }
 .mrow small {
   font-size: 10.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 .mbtn {
   flex: 0 0 auto;
@@ -2126,12 +2126,12 @@ img {
   gap: 6px;
 }
 .mbtn.f {
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
 }
 .mbtn.o {
-  background: #f1e8fe;
-  color: #6e22e0;
+  background: #efe9fd;
+  color: #111111;
 }
 .mbtn.ok {
   background: #ddf4e9;
@@ -2163,8 +2163,8 @@ img {
   font-weight: 500;
 }
 .mlock.on {
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
-  box-shadow: 0 6px 16px rgba(123, 39, 234, 0.3);
+  background: linear-gradient(90deg, #967bfe, #848afc);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
   height: 42px;
   border-radius: 21px;
   font-size: 15px;
@@ -2172,11 +2172,11 @@ img {
 }
 /* ===== หน้ารับแสตมป์ ===== */
 #stamp {
-  background: linear-gradient(#ebe3fc 0, #ebe3fc 600px, #f2ecfd 100%);
+  background: linear-gradient(#ebe3fc 0, #ebe3fc 600px, #f1ecfd 100%);
 }
 
 .screen.stampmode {
-  background: #ece5fb;
+  background: #ebe4fd;
 }
 .sttop {
   position: relative;
@@ -2215,22 +2215,22 @@ img {
   right: 8px;
   top: 8px;
   height: 2px;
-  background: #c9b8f2;
+  background: #c6b0f8;
 }
 .st5 span {
   position: relative;
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  border: 2px solid #a98aee;
+  border: 2px solid #a893f9;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .st5 span.ok {
-  background: #7b27ea;
-  border-color: #7b27ea;
+  background: #848afc;
+  border-color: #848afc;
 }
 .st5 span svg {
   display: none;
@@ -2252,15 +2252,15 @@ img {
   font-weight: 600;
 }
 .stb.p {
-  background: linear-gradient(90deg, #8a3cf0, #5a1bc7);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
-  box-shadow: 0 6px 16px rgba(91, 27, 199, 0.3);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
 }
 .stb.s {
   margin-top: 10px;
   height: 46px;
   background: rgba(255, 255, 255, 0.6);
-  border: 1.5px solid #cdb8f5;
+  border: 1.5px solid #c6b0f8;
   color: var(--ink2);
   font-weight: 500;
 }
@@ -2270,7 +2270,7 @@ img {
 #cppkg,
 #cppar,
 #cpdet {
-  background: linear-gradient(#f3eefd, #fbf9fe 260px);
+  background: linear-gradient(#f3eefd, #faf9fe 260px);
 }
 .cp-t {
   display: flex;
@@ -2315,7 +2315,7 @@ img {
   height: 34px;
   padding: 0 16px;
   border-radius: 17px;
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -2326,7 +2326,7 @@ img {
 .cph-sub {
   margin: 2px 0 0 133px;
   font-size: 12px;
-  color: #2e2a40;
+  color: #111111;
 }
 .hubc {
   display: flex;
@@ -2356,7 +2356,7 @@ img {
   display: block;
   font-size: 12.5px;
   line-height: 1.45;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 3px;
 }
 .hubc .x {
@@ -2368,8 +2368,8 @@ img {
   margin-top: 6px;
   font-size: 10.5px;
   font-weight: 600;
-  color: #6e22e0;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 9px;
   padding: 1px 9px;
 }
@@ -2399,7 +2399,7 @@ img {
   box-shadow: 0 2px 6px rgba(60, 30, 120, 0.07);
 }
 .chips2 button.on {
-  background: linear-gradient(90deg, #8a3cf0, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
 }
 .plist {
@@ -2435,7 +2435,7 @@ img {
   position: absolute;
   left: 4px;
   top: 4px;
-  background: linear-gradient(135deg, #9a4df2, #6e22e0);
+  background: linear-gradient(135deg, #967bfe, #848afc);
   color: #fff;
   font-style: normal;
   font-weight: 700;
@@ -2467,15 +2467,15 @@ img {
   align-items: center;
   gap: 6px;
   font-size: 11.5px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 3px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #efeaf6;
+  border-bottom: 1px solid #ebe4fd;
 }
 .prow .of {
   font-size: 11.5px;
   line-height: 1.45;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 5px;
 }
 .srow {
@@ -2491,7 +2491,7 @@ img {
   width: 100%;
 }
 .srow.on {
-  border-color: #b48af2;
+  border-color: #a893f9;
   background: #fcfaff;
 }
 .srow img {
@@ -2517,7 +2517,7 @@ img {
   align-items: center;
   gap: 5px;
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 2px;
 }
 .srow .of {
@@ -2525,8 +2525,8 @@ img {
   margin-top: 4px;
   font-size: 10.5px;
   line-height: 1.4;
-  color: #2e2a40;
-  background: #f1ecfa;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 8px;
   padding: 3px 8px;
 }
@@ -2541,14 +2541,14 @@ img {
   justify-content: center;
 }
 .srow.on .rd {
-  border-color: #7b27ea;
+  border-color: #848afc;
 }
 .srow.on .rd:after {
   content: '';
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #7b27ea;
+  background: #848afc;
 }
 .srow .used {
   flex: 0 0 auto;
@@ -2577,11 +2577,11 @@ img {
   height: 50px;
   border: 0;
   border-radius: 25px;
-  background: linear-gradient(90deg, #8a3cf0, #5a1bc7);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   font-size: 17px;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(91, 27, 199, 0.3);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
 }
 .cpbtn:disabled {
   background: #b8b4ca;
@@ -2608,8 +2608,8 @@ img {
   position: absolute;
   left: 12px;
   top: 12px;
-  background: #efe3ff;
-  color: #6e22e0;
+  background: #ede5fd;
+  color: #111111;
   border: 1.5px solid #fff;
   font-size: 12.5px;
   font-weight: 500;
@@ -2634,7 +2634,7 @@ img {
   gap: 6px;
   font-size: 11px;
   line-height: 1.45;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 6px;
 }
 .dname .rt {
@@ -2647,7 +2647,7 @@ img {
   box-shadow: 0 2px 8px rgba(60, 30, 120, 0.12);
   padding: 6px 9px;
   font-size: 10.5px;
-  color: #6e22e0;
+  color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2658,12 +2658,12 @@ img {
   align-items: center;
   gap: 12px;
   margin: 12px 6px 0;
-  background: #eee6fc;
+  background: #ede5fd;
   border-radius: 14px;
   padding: 9px 16px;
 }
 .doff div {
-  border-left: 1px solid #cfc0ee;
+  border-left: 1px solid #c6b0f8;
   padding-left: 12px;
   font-size: 14px;
   font-weight: 600;
@@ -2753,7 +2753,7 @@ img {
   padding: 0 18px 12px 34px;
   font-size: 11.5px;
   line-height: 1.6;
-  color: #2e2a40;
+  color: #111111;
 }
 .dcond.open ul {
   display: block;
@@ -2761,10 +2761,10 @@ img {
 
 /* ===== หน้ารายละเอียดซีรีส์ ===== */
 #sdetail {
-  background: #fbf9fe;
+  background: #faf9fe;
 }
 .screen.sdmode {
-  background: #eadcf0;
+  background: #ded1fb;
 }
 .sdh {
   position: relative;
@@ -2800,8 +2800,8 @@ img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 .cbtn.on svg path {
-  fill: #7b27ea;
-  stroke: #7b27ea;
+  fill: #848afc;
+  stroke: #848afc;
 }
 .hplay {
   position: absolute;
@@ -2821,14 +2821,14 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(123, 39, 234, 0.85);
+  background: rgba(132, 138, 252, 0.85);
   border: 2px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .sdinfo {
-  background: linear-gradient(#5b3e9e, #7a5ec0);
+  background: linear-gradient(#848afc, #967bfe);
   padding: 12px 16px 26px;
   color: #fff;
   position: relative;
@@ -2885,7 +2885,7 @@ img {
 .sdst .a small {
   display: block;
   font-size: 9.5px;
-  color: #2e2a40;
+  color: #111111;
   margin-top: -2px;
 }
 .sdst .b,
@@ -2894,7 +2894,7 @@ img {
   justify-content: center;
   gap: 2px;
   width: 78px;
-  border-left: 1px solid #eae4f3;
+  border-left: 1px solid #e5dbfc;
   font-size: 11px;
   color: var(--ink);
   text-align: center;
@@ -2954,14 +2954,14 @@ img {
   width: 6px;
   height: 6px;
   border-radius: 3px;
-  background: #d9d0ee;
+  background: #c6b0f8;
 }
 .gdots span.on {
   background: var(--p);
 }
 .unl {
   margin: 12px 12px 16px;
-  background: linear-gradient(#f7f2ff, #fff);
+  background: linear-gradient(#f6f3fe, #fff);
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(60, 30, 120, 0.08);
   padding: 12px 12px 12px;
@@ -2978,7 +2978,7 @@ img {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #7b27ea;
+  background: #848afc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2993,7 +2993,7 @@ img {
   display: block;
   font-size: 10px;
   line-height: 1.45;
-  color: #2e2a40;
+  color: #111111;
   margin-top: 2px;
 }
 .unl img {
@@ -3007,7 +3007,7 @@ img {
   width: 100%;
   height: 38px;
   border-radius: 19px;
-  background: linear-gradient(90deg, #8a3cf0, #5a1bc7);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   font-size: 15px;
 }
@@ -3045,7 +3045,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 14px 14px 10px;
-  border-bottom: 1px solid #f0ebf7;
+  border-bottom: 1px solid #ede5fd;
 }
 .sh-top h2 {
   margin: 0;
@@ -3057,7 +3057,7 @@ img {
   border: 0;
   background: none;
   font-size: 14px;
-  color: #55516a;
+  color: #5f5f6b;
   padding: 6px;
 }
 .sh-top .post-btn {
@@ -3065,7 +3065,7 @@ img {
   padding: 0 18px;
   border: 0;
   border-radius: 17px;
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   font-size: 14px;
   font-weight: 600;
@@ -3095,7 +3095,7 @@ img {
 .sh-me small {
   display: block;
   font-size: 11px;
-  color: #6b6880;
+  color: #5f5f6b;
 }
 .sh-body textarea {
   width: 100%;
@@ -3111,7 +3111,7 @@ img {
   background: none;
 }
 .sh-body textarea::placeholder {
-  color: #8e89a6;
+  color: #5f5f6b;
 }
 .sh-lb {
   font-size: 12.5px;
@@ -3128,15 +3128,15 @@ img {
   height: 30px;
   padding: 0 12px;
   border-radius: 15px;
-  border: 1px solid #e2daf2;
+  border: 1px solid #ded1fb;
   background: #fff;
   color: var(--ink2);
   font-size: 12px;
 }
 .sh-chips button.on {
-  background: #f1e8fe;
-  border-color: #b48af2;
-  color: #6e22e0;
+  background: #efe9fd;
+  border-color: #a893f9;
+  color: #111111;
   font-weight: 600;
 }
 .sh-ph {
@@ -3149,9 +3149,9 @@ img {
   width: 84px;
   height: 84px;
   border-radius: 12px;
-  border: 1.5px dashed #b9a2f0;
-  background: #fbf8ff;
-  color: #6e22e0;
+  border: 1.5px dashed #c6b0f8;
+  background: #faf9fe;
+  color: #111111;
   font-size: 11px;
   display: flex;
   flex-direction: column;
@@ -3188,13 +3188,13 @@ img {
 .sh-count {
   text-align: right;
   font-size: 11px;
-  color: #8e89a6;
+  color: #5f5f6b;
   margin-top: 4px;
 }
 .post .mine {
   font-size: 10px;
-  color: #6e22e0;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 8px;
   padding: 1px 7px;
   margin-left: 6px;
@@ -3206,8 +3206,8 @@ img {
   gap: 4px;
   margin: 6px 5px 0;
   font-size: 11px;
-  color: #6e22e0;
-  background: #f4eefe;
+  color: #111111;
+  background: #f3effe;
   border-radius: 10px;
   padding: 2px 9px;
 }
@@ -3235,7 +3235,7 @@ img {
   gap: 7px;
   font: inherit;
   font-size: 13px;
-  color: #2e2a40;
+  color: #111111;
   width: 76px;
 }
 .like svg path {
@@ -3297,8 +3297,8 @@ img {
     linear-gradient(
       90deg,
       rgba(74, 32, 150, 0.92) 0,
-      rgba(110, 60, 200, 0.55) 52%,
-      rgba(110, 60, 200, 0) 80%
+      rgba(132, 138, 252, 0.55) 52%,
+      rgba(132, 138, 252, 0) 80%
     ),
     linear-gradient(0deg, rgba(80, 40, 160, 0.35), transparent 40%);
 }
@@ -3328,7 +3328,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: #7b27ea;
+  background: #848afc;
   border-radius: 10px;
   padding: 2px 10px;
   font-size: 11.5px;
@@ -3383,7 +3383,7 @@ img {
   padding: 4px;
   transform: rotate(6deg);
   box-shadow: 0 3px 10px rgba(60, 30, 120, 0.2);
-  border: 2px dashed #c9b6f5;
+  border: 2px dashed #c6b0f8;
   border-radius: 4px;
 }
 .mini img {
@@ -3397,7 +3397,7 @@ img {
   font-size: 7.5px;
   font-weight: 600;
   color: #fff;
-  background: #6e22e0;
+  background: #848afc;
   text-align: center;
   margin-top: 2px;
   line-height: 1.4;
@@ -3433,7 +3433,7 @@ img {
   gap: 8px;
   width: max-content;
   margin: 16px auto 0;
-  background: #e2d4fb;
+  background: #e0d4fb;
   border-radius: 16px;
   padding: 4px 16px 4px 8px;
   font-size: 15px;
@@ -3543,7 +3543,7 @@ img {
 /* ===== หน้าชำระเงิน ===== */
 #pay,
 #paid {
-  background: linear-gradient(#f6f2fe, #fbf9fe 300px);
+  background: linear-gradient(#f6f2fe, #faf9fe 300px);
 }
 .paycard {
   margin: 12px 10px 0;
@@ -3564,8 +3564,8 @@ img {
 .paycard .tg {
   display: inline-block;
   font-size: 9.5px;
-  color: #7b27ea;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 9px;
   padding: 1px 8px;
 }
@@ -3579,13 +3579,13 @@ img {
 }
 .paycard small {
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
 }
 .paycard .pp {
   margin-left: auto;
   font-size: 21px;
   font-weight: 700;
-  color: #7b27ea;
+  color: #111111;
 }
 .pbox {
   margin: 10px 10px 0;
@@ -3615,24 +3615,24 @@ img {
   text-align: center;
   font-size: 10px;
   line-height: 1.35;
-  color: #2e2a40;
+  color: #111111;
   padding: 2px 4px;
 }
 .bens div + div {
-  border-left: 1px solid #eee8f7;
+  border-left: 1px solid #ebe3fc;
 }
 .osum .r {
   display: flex;
   justify-content: space-between;
   font-size: 12.5px;
-  color: #2e2a40;
+  color: #111111;
   padding: 2px 4px 8px;
 }
 .osum .t {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f1eafd;
+  background: #f0eafd;
   border-radius: 10px;
   padding: 7px 10px;
   font-size: 13px;
@@ -3641,7 +3641,7 @@ img {
 }
 .osum .t b {
   font-size: 18px;
-  color: #7b27ea;
+  color: #111111;
 }
 .pm {
   display: flex;
@@ -3653,7 +3653,7 @@ img {
   align-items: center;
   gap: 12px;
   height: 44px;
-  border: 1px solid #ece6f5;
+  border: 1px solid #e8dffc;
   border-radius: 12px;
   background: #fff;
   padding: 0 12px;
@@ -3664,8 +3664,8 @@ img {
   text-align: left;
 }
 .pm button.on {
-  background: #f6f1fe;
-  border-color: #d7c6f7;
+  background: #f5f1fe;
+  border-color: #c6b0f8;
 }
 .pm .rd {
   flex: 0 0 18px;
@@ -3678,14 +3678,14 @@ img {
   justify-content: center;
 }
 .pm button.on .rd {
-  border-color: #7b27ea;
+  border-color: #848afc;
 }
 .pm button.on .rd:after {
   content: '';
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: #7b27ea;
+  background: #848afc;
 }
 .pm .br {
   margin-left: auto;
@@ -3696,8 +3696,8 @@ img {
   font-size: 8.5px;
   font-weight: 700;
   letter-spacing: 0.3px;
-  color: #3b3560;
-  border: 1px solid #dcd5ea;
+  color: #5f5f6b;
+  border: 1px solid #c6b0f8;
   border-radius: 4px;
   padding: 1px 4px;
   background: #fff;
@@ -3712,11 +3712,11 @@ img {
   height: 44px;
   border: 0;
   border-radius: 22px;
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(123, 39, 234, 0.3);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.3);
 }
 .paybtn.busy {
   opacity: 0.75;
@@ -3755,8 +3755,8 @@ img {
   padding: 0 16px;
   border: 0;
   border-radius: 17px;
-  background: #f1e8fe;
-  color: #6e22e0;
+  background: #efe9fd;
+  color: #111111;
   font-size: 13px;
   font-weight: 600;
 }
@@ -3782,7 +3782,7 @@ img {
   align-items: center;
   gap: 12px;
   height: 50px;
-  border: 1px solid #ece6f5;
+  border: 1px solid #e8dffc;
   border-radius: 12px;
   background: #fff;
   padding: 0 14px;
@@ -3790,8 +3790,8 @@ img {
   text-align: left;
 }
 .locl button.on {
-  background: #f6f1fe;
-  border-color: #c9b0f5;
+  background: #f5f1fe;
+  border-color: #c6b0f8;
 }
 .locl b {
   font-size: 14px;
@@ -3807,8 +3807,8 @@ img {
   margin-left: auto;
   font-size: 11px;
   font-weight: 600;
-  color: #6e22e0;
-  background: #f1e8fe;
+  color: #111111;
+  background: #efe9fd;
   border-radius: 9px;
   padding: 2px 9px;
 }
@@ -3818,14 +3818,14 @@ img {
   height: 18px;
   flex: 0 0 18px;
   border-radius: 50%;
-  background: #7b27ea
+  background: #848afc
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E")
     center/11px no-repeat;
 }
 
 /* ===== หน้าทริปสำเร็จ: ตราประทับ แสตมป์ครบ กรอบโพลารอยด์ ===== */
 #tripdone {
-  background: linear-gradient(#ede3fd, #fbf9fe 340px);
+  background: linear-gradient(#ebe4fd, #faf9fe 340px);
 }
 .td-top {
   display: flex;
@@ -3870,7 +3870,7 @@ img {
 .seal {
   display: block;
   margin: 4px auto 0;
-  filter: drop-shadow(0 8px 16px rgba(91, 27, 199, 0.25));
+  filter: drop-shadow(0 8px 16px rgba(132, 138, 252, 0.25));
 }
 .td-stamps {
   display: flex;
@@ -3954,7 +3954,7 @@ img {
   height: 32px;
   padding: 0 12px;
   border-radius: 16px;
-  border: 1px solid #e2daf2;
+  border: 1px solid #ded1fb;
   background: #fff;
   font-size: 12px;
   color: var(--ink2);
@@ -3966,10 +3966,10 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 .fstyles button.on {
-  border-color: #9a6af0;
-  background: #f6f1fe;
+  border-color: #a893f9;
+  background: #f5f1fe;
   font-weight: 600;
-  color: #6e22e0;
+  color: #111111;
 }
 .td-acts {
   display: grid;
@@ -3990,21 +3990,21 @@ img {
   cursor: pointer;
 }
 .td-acts .a1 {
-  background: #f1e8fe;
-  color: #6e22e0;
+  background: #efe9fd;
+  color: #111111;
   border: 0;
 }
 .td-acts .a2 {
-  background: linear-gradient(90deg, #9a4df2, #6e22e0);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   border: 0;
-  box-shadow: 0 5px 14px rgba(123, 39, 234, 0.28);
+  box-shadow: 0 5px 14px rgba(132, 138, 252, 0.28);
 }
 .td-acts .a3 {
   grid-column: 1/3;
   background: #fff;
   color: var(--ink2);
-  border: 1.5px solid #cdb8f5;
+  border: 1.5px solid #c6b0f8;
 }
 .donebn {
   display: flex;
@@ -4014,11 +4014,11 @@ img {
   width: calc(100% - 22px);
   border: 0;
   border-radius: 14px;
-  background: linear-gradient(90deg, #8a3cf0, #5a1bc7);
+  background: linear-gradient(90deg, #967bfe, #848afc);
   color: #fff;
   padding: 10px 12px;
   text-align: left;
-  box-shadow: 0 6px 16px rgba(91, 27, 199, 0.28);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.28);
 }
 .donebn b {
   display: block;
@@ -4036,9 +4036,9 @@ img {
   gap: 11px;
   margin: 9px 11px 0;
   width: calc(100% - 22px);
-  border: 1.5px dashed #cdb8f5;
+  border: 1.5px dashed #c6b0f8;
   border-radius: 14px;
-  background: #fbf8ff;
+  background: #faf9fe;
   padding: 9px 12px;
   text-align: left;
 }
@@ -4047,7 +4047,7 @@ img {
   width: 42px;
   height: 42px;
   border-radius: 10px;
-  background: #f1e8fe;
+  background: #efe9fd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4080,15 +4080,15 @@ img {
   height: 26px;
   padding: 0 10px;
   border-radius: 13px;
-  background: #ece7f5;
-  color: #6b6880;
+  background: #e9e0fc;
+  color: #5f5f6b;
   font-size: 11px;
   font-weight: 600;
 }
 .rwd.ready {
   border: 0;
-  background: linear-gradient(90deg, #8a3cf0, #5a1bc7);
-  box-shadow: 0 6px 16px rgba(91, 27, 199, 0.28);
+  background: linear-gradient(90deg, #967bfe, #848afc);
+  box-shadow: 0 6px 16px rgba(132, 138, 252, 0.28);
 }
 .rwd.ready b,
 .rwd.ready small {
@@ -4102,7 +4102,7 @@ img {
 }
 .rwd.ready .rwd-st {
   background: #fff;
-  color: #5a1bc7;
+  color: #111111;
 }
 .rwd.got {
   border: 1.5px solid #bfe6d3;
@@ -4116,7 +4116,7 @@ img {
   margin: 8px 4px 0;
   text-align: center;
   font-size: 10.5px;
-  color: #8a6a3d;
+  color: #5f5f6b;
   line-height: 1.45;
 }
 .pol-lock {
@@ -4183,7 +4183,7 @@ img {
   gap: 5px;
   font-size: 10.5px;
   font-weight: 600;
-  color: #6e22e0;
+  color: #111111;
 }
 .dcard2 b {
   display: block;
@@ -4199,7 +4199,7 @@ img {
   gap: 4px 10px;
   margin-top: 5px;
   font-size: 10.5px;
-  color: #2e2a40;
+  color: #111111;
 }
 .dcard2 .m span {
   display: flex;
@@ -4248,8 +4248,8 @@ img {
   align-items: center;
   justify-content: center;
   gap: 2px;
-  background: linear-gradient(135deg, #efe6fd, #dccbf8);
-  color: #6e22e0;
+  background: linear-gradient(135deg, #ede6fd, #c6b0f8);
+  color: #111111;
   font-size: 8px;
   font-weight: 600;
   text-align: center;
@@ -4283,7 +4283,7 @@ img {
   padding: 8px 12px 2px 52px;
   font-size: 11px;
   font-weight: 700;
-  color: #6e22e0;
+  color: #111111;
   position: relative;
   z-index: 1;
 }
@@ -4310,7 +4310,7 @@ img {
 /* ===== โพสต์แชร์ทริปสำเร็จ: แสดงกรอบโพลารอยด์เต็มใบ ===== */
 .post .pimg.pol {
   justify-content: center;
-  background: #f4eefe;
+  background: #f3effe;
   border-radius: 10px;
   padding: 14px 0;
 }
@@ -4346,7 +4346,7 @@ img {
 }
 .slide.s2 {
   aspect-ratio: 695/338;
-  background: radial-gradient(circle at 85% 30%, #f3eaff 0, #e4d3fb 45%, #d6c1f8 100%);
+  background: radial-gradient(circle at 85% 30%, #f1ecfd 0, #dfd3fb 45%, #c6b0f8 100%);
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -4360,7 +4360,7 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: #7b27ea;
+  background: #848afc;
   color: #fff;
   font-size: 11.5px;
   font-weight: 600;
@@ -4371,14 +4371,14 @@ img {
   margin-top: 6px;
   font-size: 14px;
   font-weight: 600;
-  color: #3a1b7a;
+  color: #111111;
   line-height: 1.2;
 }
 .slide.s2 .t2 {
   font-size: 27px;
   font-weight: 700;
   font-style: italic;
-  color: #2a1458;
+  color: #111111;
   line-height: 1.15;
   letter-spacing: -0.3px;
 }
@@ -4386,7 +4386,7 @@ img {
   display: inline-block;
   margin-top: 3px;
   font-size: 12px;
-  color: #5b4b8a;
+  color: #111111;
   background: rgba(255, 255, 255, 0.65);
   border-radius: 10px;
   padding: 1px 10px;
@@ -4401,10 +4401,10 @@ img {
   border: 0;
   border-radius: 16px;
   background: #fff;
-  color: #2a1458;
+  color: #111111;
   font-size: 13px;
   font-weight: 600;
-  box-shadow: 0 2px 8px rgba(91, 33, 182, 0.14);
+  box-shadow: 0 2px 8px rgba(132, 138, 252, 0.14);
 }
 .slide.s2 .ill {
   position: absolute;
@@ -4437,7 +4437,7 @@ img {
 .nt-h button {
   border: 0;
   background: none;
-  color: #6e22e0;
+  color: #111111;
   font-size: 12px;
   font-weight: 600;
   padding: 4px;
@@ -4457,11 +4457,11 @@ img {
   padding: 10px;
   border-radius: 12px;
   background: #fff;
-  border: 1px solid #efeaf7;
+  border: 1px solid #ece5fd;
 }
 .nti.new {
-  background: #f7f2ff;
-  border-color: #e2d4fb;
+  background: #f6f3fe;
+  border-color: #e0d4fb;
 }
 .nti .ic {
   flex: 0 0 36px;
@@ -4472,7 +4472,7 @@ img {
   align-items: center;
   justify-content: center;
   font-size: 17px;
-  background: #f1e8fe;
+  background: #efe9fd;
 }
 .nti b {
   display: block;
@@ -4485,20 +4485,20 @@ img {
   margin: 2px 0 0;
   font-size: 11.5px;
   line-height: 1.45;
-  color: #2e2a40;
+  color: #111111;
 }
 .nti small {
   display: block;
   margin-top: 3px;
   font-size: 10px;
-  color: #8e89a6;
+  color: #5f5f6b;
 }
 .nti .dt {
   flex: 0 0 8px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #7b27ea;
+  background: #848afc;
   margin-top: 6px;
 }
 .nt-empty {
@@ -4508,7 +4508,7 @@ img {
   color: var(--mute);
 }
 #notif {
-  background: #fbf9fe;
+  background: #faf9fe;
 }
 #ntRead {
   border: 0;
@@ -4594,7 +4594,7 @@ img {
   padding: 6px 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
   font-size: 11px;
-  color: #2e2a40;
+  color: #111111;
 }
 .lmap .nx b {
   display: block;
@@ -4608,7 +4608,7 @@ img {
   flex: 0 0 auto;
   margin-left: auto;
   font-weight: 700;
-  color: #6e22e0;
+  color: #111111;
   font-size: 11.5px;
 }
 .lmap .tag {
@@ -4620,11 +4620,86 @@ img {
   padding: 2px 9px;
   font-size: 10px;
   font-weight: 600;
-  color: #5a1bc7;
+  color: #111111;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 .lmap .pin {
   cursor: pointer;
+}
+/* ╔═══════════════════════════════════════════════════════════════════╗
+   21. ธีมไล่สี (ตามภาพตัวอย่าง): พื้นหลังไล่สีม่วงอ่อน → ขาว, วงกลมโปร่งแสงตกแต่ง,
+       การ์ดขาวมุมโค้งมาก เงานุ่ม, ตัวหนังสือดำหรือขาว
+   ╚═══════════════════════════════════════════════════════════════════╝ */
+.screen {
+  background: #967bfe;
+}
+.status {
+  color: #fff;
+}
+.status svg {
+  fill: #fff;
+}
+.status svg rect[fill='none'] {
+  stroke: #fff;
+}
+.screen .view {
+  background:
+    radial-gradient(circle at 92% 3%, rgba(255, 255, 255, 0.3) 0 54px, transparent 55px),
+    radial-gradient(circle at 70% 11%, rgba(255, 255, 255, 0.2) 0 30px, transparent 31px),
+    radial-gradient(circle at 98% 19%, rgba(255, 255, 255, 0.16) 0 26px, transparent 27px),
+    radial-gradient(circle at 8% 15%, rgba(255, 255, 255, 0.12) 0 40px, transparent 41px),
+    linear-gradient(180deg, #967bfe 0px, #a893f9 130px, #c6b0f8 250px, #f3eefe 400px, #ffffff 560px) !important;
+}
+/* ส่วนหัว (โลโก้ กระดิ่ง ชื่อหน้า) อยู่บนพื้นม่วง → ใช้สีขาว */
+.hdr .brand .wm,
+.hdr .brand .sub {
+  color: #fff !important;
+}
+.hdr .brand svg > path:first-child {
+  fill: #fff;
+}
+.bell svg {
+  stroke: #fff !important;
+}
+.ttl h1, .ttl p, .c-ttl h1, .c-ttl p, .p-ttl h1, .ct-h h1, .pg-h h1, .pg-h p,
+.cp-t h1, .td-top h1, .rv-h h2, .rv-h p {
+  color: #fff !important;
+}
+.ct-h button svg, .cp-t button svg, .td-top button svg {
+  stroke: #fff;
+}
+#ntRead {
+  color: #fff !important;
+}
+.loc {
+  border-color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+}
+/* การ์ดขาวมุมโค้งมาก เงานุ่มแบบตัวอย่าง */
+.pk, .sc, .post, .pcard, .list, .st, .dcard, .td-card, .hubc, .okc, .oki, .excard, .atc,
+.astops, .stops, .rvs, .prog, .ready, .unl, .prow, .srow, .mcard, .sdst, .paycard, .pbox,
+.dcard2, .rwd, .locEmpty, .search {
+  border-radius: 20px !important;
+  box-shadow: 0 10px 28px rgba(132, 138, 252, 0.16) !important;
+}
+.pk.ult, .pcard.exp, .pcard.fan, .pcard.ult {
+  box-shadow: 0 12px 32px rgba(132, 138, 252, 0.22) !important;
+}
+/* ปุ่มหลักไล่สีแบบตัวอย่าง */
+.flowbtn, .bigbtn.pri, .paybtn, .cpbtn:not(:disabled), .pk.ult .cta, .stb.p, .td-acts .a2:not(:disabled),
+.mlock.on, .ready .bigbtn, .unl .bigbtn, .pcard.exp .btn, .seg button.on, .chip.on, .chips2 button.on {
+  background: linear-gradient(90deg, #967bfe, #848afc) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 20px rgba(132, 138, 252, 0.35) !important;
+}
+/* แท็บที่เลือกในแถบเมนูล่าง */
+.tab.on {
+  background: linear-gradient(135deg, #967bfe, #848afc) !important;
+  color: #fff !important;
+}
+.tabbar {
+  border-top: 0;
+  box-shadow: 0 -6px 24px rgba(132, 138, 252, 0.14);
 }
 </style>
 </head>
@@ -4653,7 +4728,7 @@ img {
         <span class="wm">แกะรอย</span>
       </div>
       <div style="display:flex;align-items:center">
-        <button class="loc" type="button" data-loc><svg width="13" height="15" viewBox="0 0 24 28" fill="#7B27EA"><path d="M12 27S2 17.5 2 10.5a10 10 0 0 1 20 0C22 17.5 12 27 12 27zm0-12.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg><span class="locN">พระนคร</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+        <button class="loc" type="button" data-loc><svg width="13" height="15" viewBox="0 0 24 28" fill="#848afc"><path d="M12 27S2 17.5 2 10.5a10 10 0 0 1 20 0C22 17.5 12 27 12 27zm0-12.5a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/></svg><span class="locN">พระนคร</span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
         <button class="bell" type="button" aria-label="การแจ้งเตือน"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.6 2H4.4z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg><i></i></button>
       </div>
     </div>
@@ -4666,14 +4741,14 @@ img {
           <div class="t1">เตรียมพบกับ</div>
           <div class="t2">แกะรอยย่านใหม่</div>
           <div class="t3">เร็ว ๆ นี้</div>
-          <button type="button" class="nb" id="nbNew"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>แจ้งเตือนฉัน <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+          <button type="button" class="nb" id="nbNew"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>แจ้งเตือนฉัน <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
         </div>
         <svg class="ill" width="170" height="170" viewBox="0 0 170 170" aria-hidden="true">
           <path d="M18 60l42-16 46 16 42-16v92l-42 16-46-16-42 16z" fill="#fff" opacity=".85"/>
-          <path d="M60 44v92M106 60v92" stroke="#C9B6F5" stroke-width="3"/>
-          <path d="M30 120c30-10 50 8 80-8s30-30 40-34" stroke="#B48AF2" stroke-width="3" stroke-dasharray="6 6" fill="none" stroke-linecap="round"/>
-          <g><path d="M48 98s-14-13-14-24a14 14 0 0 1 28 0c0 11-14 24-14 24z" fill="#9A6AF0"/><circle cx="48" cy="74" r="5" fill="#fff"/></g>
-          <g><path d="M126 80s-18-16-18-30a18 18 0 0 1 36 0c0 14-18 30-18 30z" fill="#6E22E0"/><text x="126" y="57" text-anchor="middle" font-family="Prompt,sans-serif" font-size="20" font-weight="700" fill="#fff">?</text></g>
+          <path d="M60 44v92M106 60v92" stroke="#c6b0f8" stroke-width="3"/>
+          <path d="M30 120c30-10 50 8 80-8s30-30 40-34" stroke="#a893f9" stroke-width="3" stroke-dasharray="6 6" fill="none" stroke-linecap="round"/>
+          <g><path d="M48 98s-14-13-14-24a14 14 0 0 1 28 0c0 11-14 24-14 24z" fill="#a893f9"/><circle cx="48" cy="74" r="5" fill="#fff"/></g>
+          <g><path d="M126 80s-18-16-18-30a18 18 0 0 1 36 0c0 14-18 30-18 30z" fill="#848afc"/><text x="126" y="57" text-anchor="middle" font-family="Prompt,sans-serif" font-size="20" font-weight="700" fill="#fff">?</text></g>
           <path d="M142 18l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" fill="#FBBF24"/>
           <circle cx="30" cy="30" r="4" fill="#fff"/><circle cx="158" cy="110" r="3" fill="#fff"/>
         </svg>
@@ -4700,7 +4775,7 @@ img {
           <div class="b">
             <h3>Fan Pass</h3>
             <div class="s">สำหรับแฟนซีรีส์ตัวจริง</div>
-            <div class="pr" style="margin-top:23px"><b style="color:#E0355E">฿399</b><span>/แพ็กเกจ</span></div>
+            <div class="pr" style="margin-top:23px"><b style="color:#111111">฿399</b><span>/แพ็กเกจ</span></div>
             <ul><li><svg width="10" height="10" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>เลือกซีรีส์ได้สูงสุด 2 เรื่อง</li><li><svg width="10" height="10" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ปลดล็อกทุกสถานที่</li><li><svg width="10" height="10" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>แผนที่นำทางแบบเต็มรูปแบบ</li></ul>
             <button class="cta" type="button" data-buy="fan">เลือกแพ็กเกจนี้ <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
           </div>
@@ -4713,7 +4788,7 @@ img {
             <div class="pr" style="margin-top:8px"><b>฿599</b><span>/แพ็กเกจ</span></div>
             <ul><li><svg width="10" height="10" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>เลือกซีรีส์ได้สูงสุด 3 เรื่อง</li><li><svg width="10" height="10" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ปลดล็อกเนื้อหาพิเศษ</li><li><svg width="10" height="10" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>แผนที่นำทาง + Audio Guide</li></ul>
             <div class="note">
-              <svg width="22" height="18" viewBox="0 0 26 20" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M2 3h22v4a3 3 0 0 0 0 6v4H2v-4a3 3 0 0 0 0-6z" transform="rotate(-8 13 10)"/><path d="M11 7.5v5l4.5-2.5z" fill="#7B27EA" stroke="none"/></svg>
+              <svg width="22" height="18" viewBox="0 0 26 20" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M2 3h22v4a3 3 0 0 0 0 6v4H2v-4a3 3 0 0 0 0-6z" transform="rotate(-8 13 10)"/><path d="M11 7.5v5l4.5-2.5z" fill="#848afc" stroke="none"/></svg>
               <span>แพ็กเกจนี้จะได้สิทธิ<br>ลุ้นเข้าพบมีต</span>
             </div>
             <button class="cta" type="button" data-buy="ult" style="margin-top:6px">เลือกแพ็กเกจนี้ <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
@@ -4745,7 +4820,7 @@ img {
     </label>
     <div class="s-h">
       <h2>ซีรีส์ทั้งหมด</h2>
-      <button class="sort" type="button">เรียงตาม : ยอดนิยม <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#4C1FB0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <button class="sort" type="button">เรียงตาม : ยอดนิยม <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
     </div>
     <div class="locEmpty" id="sEmpty" style="display:none"></div>
     <div class="sgrid" id="sGrid">
@@ -4778,12 +4853,12 @@ img {
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="t_map" alt="" width="179">
       <h2 id="emptyT">ยังไม่มีทริป</h2>
       <p id="emptyP">ซื้อแพ็กเกจและสร้างเส้นทาง<br>เพื่อเริ่มตามรอยซีรีส์ที่คุณชอบ</p>
-      <button type="button" class="bigbtn" id="emptyBuy" data-go="packages" style="display:none;margin:18px auto 0;width:auto;padding:0 26px;height:44px;border-radius:22px;background:linear-gradient(90deg,#9A4DF2,#6E22E0);color:#fff;font-size:15px;box-shadow:0 6px 16px rgba(123,39,234,.3)">ดูแพ็กเกจตามรอย <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      <button type="button" class="bigbtn" id="emptyBuy" data-go="packages" style="display:none;margin:18px auto 0;width:auto;padding:0 26px;height:44px;border-radius:22px;background:linear-gradient(90deg,#967bfe,#848afc);color:#fff;font-size:15px;box-shadow:0 6px 16px rgba(132, 138, 252, .3)">ดูแพ็กเกจตามรอย <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
     <div id="tripActive" style="display:none">
       <div class="atc">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="at_poster" alt="" id="atPoster">
-        <div style="min-width:0"><div class="k"><svg width="18" height="16" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#7B27EA"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#A77AF0"/></svg>ทริปตามรอยซีรีส์</div>
+        <div style="min-width:0"><div class="k"><svg width="18" height="16" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#848afc"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#a893f9"/></svg>ทริปตามรอยซีรีส์</div>
           <h3 id="atTitle">หนึ่งในร้อย</h3>
           <div class="m"><svg width="11" height="12" viewBox="0 0 24 26" fill="#3B3560"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg><span id="atCount">5 จุดหมาย</span><i></i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#3B3560" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span id="atTime">ใช้เวลาประมาณครึ่งวัน</span></div></div>
         <span class="more3"><button class="icon-btn dots3" type="button" aria-label="ตัวเลือก"><svg width="22" height="22" viewBox="0 0 24 24" fill="#3B3560"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></svg></button></span>
@@ -4792,19 +4867,19 @@ img {
       <div class="at-h">เส้นทางตามรอยของคุณ</div>
       <div class="astops" id="atStops"></div>
       <button class="rwd" type="button" id="rwdCard">
-        <span class="rwd-ic" id="rwdIc"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><rect x="6.5" y="5.5" width="11" height="10"/></svg></span>
+        <span class="rwd-ic" id="rwdIc"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><rect x="6.5" y="5.5" width="11" height="10"/></svg></span>
         <span class="rwd-tx"><b id="rwdT">รางวัลเมื่อตามรอยครบ 5 จุด</b><small id="rwdS">ตราประทับดิจิทัล + กรอบโพลารอยด์ที่ระลึก</small></span>
         <span class="rwd-st" id="rwdSt"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span id="rwdN">0/5</span></span>
       </button>
       <div class="prog">
-        <svg width="34" height="32" viewBox="0 0 34 32" fill="none" stroke="#7B27EA" stroke-width="1.7" stroke-linejoin="round"><path d="M2 10l8-3 8 3 8-3v20l-8 3-8-3-8 3zM10 7v20M18 10v20"/><path d="M26 15s-5-4.5-5-8.5a5 5 0 0 1 10 0c0 4-5 8.5-5 8.5z" fill="#7B27EA" stroke="none"/><circle cx="26" cy="6.5" r="1.8" fill="#fff" stroke="none"/></svg>
+        <svg width="34" height="32" viewBox="0 0 34 32" fill="none" stroke="#848afc" stroke-width="1.7" stroke-linejoin="round"><path d="M2 10l8-3 8 3 8-3v20l-8 3-8-3-8 3zM10 7v20M18 10v20"/><path d="M26 15s-5-4.5-5-8.5a5 5 0 0 1 10 0c0 4-5 8.5-5 8.5z" fill="#848afc" stroke="none"/><circle cx="26" cy="6.5" r="1.8" fill="#fff" stroke="none"/></svg>
         <div class="bar"><span class="lb">ความคืบหน้าทริปนี้</span><div class="dots5" id="pdots"></div></div>
         <div class="ct"><span id="pN">0</span>/<span class="tTot">5</span> <small>จุด</small></div>
       </div>
       <button class="coupon" type="button" data-go="cphub">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M2 6.5h20V9H2zM12 6.5V21M12 6.5C10 3 6.5 2.5 6.5 4.5S10 6.5 12 6.5zM12 6.5c2-3.5 5.5-4 5.5-2S14 6.5 12 6.5z"/></svg>
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.5" stroke-linejoin="round"><rect x="3" y="9" width="18" height="12" rx="1.5"/><path d="M2 6.5h20V9H2zM12 6.5V21M12 6.5C10 3 6.5 2.5 6.5 4.5S10 6.5 12 6.5zM12 6.5c2-3.5 5.5-4 5.5-2S14 6.5 12 6.5z"/></svg>
         <div style="flex:1"><b>คูปองร้านอาหาร</b><small>ส่วนลดพิเศษในเส้นทางนี้</small></div>
-        <svg width="52" height="28" viewBox="0 0 52 28"><path d="M4 4h44v6a4 4 0 0 0 0 8v6H4v-6a4 4 0 0 0 0-8z" fill="#D7C2FA" transform="rotate(-8 26 14)"/><text x="26" y="19" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Prompt,sans-serif">%</text></svg>
+        <svg width="52" height="28" viewBox="0 0 52 28"><path d="M4 4h44v6a4 4 0 0 0 0 8v6H4v-6a4 4 0 0 0 0-8z" fill="#c6b0f8" transform="rotate(-8 26 14)"/><text x="26" y="19" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" font-family="Prompt,sans-serif">%</text></svg>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
       </button>
       <div style="height:16px"></div>
@@ -4814,7 +4889,7 @@ img {
       <h2>แพ็กเกจของคุณพร้อมใช้งาน</h2>
       <p>คุณได้ซื้อแพ็กเกจเรียบร้อยแล้ว<br>สร้างเส้นทางท่องเที่ยวตามรอยซีรีส์ได้เลย</p>
       <button class="bigbtn" type="button" data-go="create">
-        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"><path d="M2 7l6-2 6 2 6-2v15l-6 2-6-2-6 2zM8 5v15M14 7v15"/><circle cx="21" cy="5" r="4" fill="#9A4DF2"/><path d="M21 3v4M19 5h4" stroke-linecap="round"/></svg>
+        <svg width="26" height="24" viewBox="0 0 26 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"><path d="M2 7l6-2 6 2 6-2v15l-6 2-6-2-6 2zM8 5v15M14 7v15"/><circle cx="21" cy="5" r="4" fill="#967bfe"/><path d="M21 3v4M19 5h4" stroke-linecap="round"/></svg>
         สร้างเส้นทาง <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
   </section>
@@ -4830,7 +4905,7 @@ img {
     </div>
     <div class="chips">
       <button class="chip on" type="button" style="width:86px">ทั้งหมด</button>
-      <button class="chip" type="button" style="width:107px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>รีวิวล่าสุด</button>
+      <button class="chip" type="button" style="width:107px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>รีวิวล่าสุด</button>
       <button class="chip" type="button" style="width:107px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E0355E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-4-3-6-4-10-2 2-3 4-3 6-1-1-2-2-2-4-2 2-5 5-5 8a7 7 0 0 0 7 7z"/></svg>ยอดนิยม</button>
     </div>
 
@@ -4876,13 +4951,13 @@ img {
       <div>
         <div class="nm">Nadia Travel</div>
         <div class="ds">นักเดินทางสายตามรอยซีรีส์</div>
-        <button class="ed" type="button">แก้ไขโปรไฟล์ <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#6A2AD8" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+        <button class="ed" type="button">แก้ไขโปรไฟล์ <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
       </div>
     </div>
     <div class="stats">
-      <div class="st"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9A6AF0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8" width="19" height="13" rx="2"/><path d="M2.5 8l1.6-4.6 16.4-.4L21.5 8M8 3.2 9.6 8M13.6 3 15.2 8"/><path d="M10 12.3v5.2l4.4-2.6z"/></svg><div><b id="pfSer">0</b><small>ซีรีส์ที่ตามรอย</small></div></div>
-      <div class="st"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9A6AF0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7.5-7-7.5-12.5a7.5 7.5 0 0 1 15 0C19.5 15 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.6"/></svg><div><b id="pfChk">0</b><small>เช็กอินแล้ว</small></div></div>
-      <div class="st"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#9A6AF0" stroke-width="1.4" stroke-linejoin="round"><path d="M6 3.5l12.5 2.2-.5 2.9a2 2 0 0 0-.7 3.9l-.3 2a2 2 0 0 0-.7 3.9l-.5 2.9L3.3 19l.5-2.9a2 2 0 0 0 .7-3.9l.3-2a2 2 0 0 0 .7-3.9z"/></svg><div><b id="pfStp">0</b><small>แสตมป์สะสม</small></div></div>
+      <div class="st"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a893f9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8" width="19" height="13" rx="2"/><path d="M2.5 8l1.6-4.6 16.4-.4L21.5 8M8 3.2 9.6 8M13.6 3 15.2 8"/><path d="M10 12.3v5.2l4.4-2.6z"/></svg><div><b id="pfSer">0</b><small>ซีรีส์ที่ตามรอย</small></div></div>
+      <div class="st"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a893f9" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s-7.5-7-7.5-12.5a7.5 7.5 0 0 1 15 0C19.5 15 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.6"/></svg><div><b id="pfChk">0</b><small>เช็กอินแล้ว</small></div></div>
+      <div class="st"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#a893f9" stroke-width="1.4" stroke-linejoin="round"><path d="M6 3.5l12.5 2.2-.5 2.9a2 2 0 0 0-.7 3.9l-.3 2a2 2 0 0 0-.7 3.9l-.5 2.9L3.3 19l.5-2.9a2 2 0 0 0 .7-3.9l.3-2a2 2 0 0 0 .7-3.9z"/></svg><div><b id="pfStp">0</b><small>แสตมป์สะสม</small></div></div>
     </div>
 
     <div class="p-sec">
@@ -4915,7 +4990,7 @@ img {
   <section class="view" id="packages">
     <div class="hdr"><div class="brand"><svg width="32" height="38" viewBox="0 0 36 42" aria-hidden="true"><path d="M18 41S3 26 3 16a15 15 0 0 1 30 0c0 10-15 25-15 25z" fill="#7B27EA"/><circle cx="18" cy="16" r="10.5" fill="#fff"/><rect x="12" y="14" width="12" height="8" rx="1.2" fill="#7B27EA"/><path d="M12 12.6l11.5-2.2" stroke="#7B27EA" stroke-width="2.2" stroke-linecap="round"/><path d="M16.8 15.6v4.8l3.8-2.4z" fill="#fff"/></svg><span class="wm">แกะรอย</span></div><div style="display:flex;align-items:center"><button class="bell" type="button" aria-label="การแจ้งเตือน"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.6 2H4.4z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg><i></i></button></div></div>
     <div class="pg-h">
-      <button class="back" type="button" data-go="home" aria-label="ย้อนกลับ"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="back" type="button" data-go="home" aria-label="ย้อนกลับ"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div><h1>แพ็กเกจทั้งหมด</h1><p>เลือกแพ็กเกจที่เหมาะกับสไตล์การเที่ยวของคุณ</p></div>
     </div>
     <div class="pcard exp">
@@ -4923,7 +4998,7 @@ img {
       <div class="bd"><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2A0D6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
         <h3>Explorer Pass</h3><div class="s">ตามรอยซีรีส์ยอดนิยม</div>
         <div class="pr"><b>฿199</b><span>/แพ็กเกจ</span></div>
-        <ul><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>เลือกซีรีส์ได้ 1 เรื่อง</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ปลดล็อกสถานที่หลัก</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>แผนที่นำทาง &amp; ข้อมูล</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>คูปองส่วนลดชุมชน</li></ul>
+        <ul><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#848afc"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>เลือกซีรีส์ได้ 1 เรื่อง</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#848afc"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ปลดล็อกสถานที่หลัก</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#848afc"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>แผนที่นำทาง &amp; ข้อมูล</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#848afc"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>คูปองส่วนลดชุมชน</li></ul>
         <button class="btn" type="button" data-trial><span id="expBtnTx">เริ่มทดลองใช้ฟรี</span> <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
       </div>
     </div>
@@ -4942,7 +5017,7 @@ img {
       <div class="bd"><svg class="go" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2A0D6E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
         <h3 style="font-size:17px">Ultimate Fan Pass</h3><div class="s">ครบทุกประสบการณ์</div>
         <div class="pr"><b>฿599</b><span>/แพ็กเกจ</span></div>
-        <ul><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>เลือกซีรีส์ได้สูงสุด 3 เรื่อง</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ปลดล็อกเนื้อหาพิเศษ</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>แผนที่นำทาง + Audio Guide</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>คูปองส่วนลดสูงสุด ฿100</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><b style="font-weight:600;color:#1A0B39">แพ็กเกจนี้ได้สิทธิ์ลุ้นเข้าร่วมแฟนมีต</b></li></ul>
+        <ul><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>เลือกซีรีส์ได้สูงสุด 3 เรื่อง</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ปลดล็อกเนื้อหาพิเศษ</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>แผนที่นำทาง + Audio Guide</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>คูปองส่วนลดสูงสุด ฿100</li><li><svg width="13" height="13" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#159A90"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><b style="font-weight:600;color:#111111">แพ็กเกจนี้ได้สิทธิ์ลุ้นเข้าร่วมแฟนมีต</b></li></ul>
         <button class="btn" type="button" data-buy="ult">เลือกแพ็กเกจนี้ <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#118A80" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
       </div>
     </div>
@@ -4961,28 +5036,28 @@ img {
       <div class="fr">ฟรี</div>
     </div>
     <div class="oki">
-      <div><svg width="22" height="18" viewBox="0 0 24 20" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M2 3h20v4a3 3 0 0 0 0 6v4H2v-4a3 3 0 0 0 0-6z"/></svg>สิทธิ์ทดลอง<span>เลือกซีรีส์ได้ 1 เรื่อง</span></div>
-      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ระยะเวลาใช้งาน<span>ใช้งานได้ทันที</span></div>
-      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>ค่าใช้จ่าย<span>ไม่มีการชำระเงิน</span></div>
+      <div><svg width="22" height="18" viewBox="0 0 24 20" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M2 3h20v4a3 3 0 0 0 0 6v4H2v-4a3 3 0 0 0 0-6z"/></svg>สิทธิ์ทดลอง<span>เลือกซีรีส์ได้ 1 เรื่อง</span></div>
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ระยะเวลาใช้งาน<span>ใช้งานได้ทันที</span></div>
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg>ค่าใช้จ่าย<span>ไม่มีการชำระเงิน</span></div>
     </div>
     <button class="bigbtn pri" type="button" data-go="trips"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>ไปสร้างทริปของฉัน <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
-    <button class="bigbtn sec" type="button" data-go="home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="1.8" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>กลับหน้าหลัก</button>
+    <button class="bigbtn sec" type="button" data-go="home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.8" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>กลับหน้าหลัก</button>
     <div style="height:90px"></div>
   </section>
 
   <!-- ===================== PAYMENT : หน้าชำระเงิน (เติมข้อมูลจาก JS: payShow) ===================== -->
   <section class="view" id="pay">
     <div class="hdr"><div class="brand"><svg width="32" height="38" viewBox="0 0 36 42" aria-hidden="true"><path d="M18 41S3 26 3 16a15 15 0 0 1 30 0c0 10-15 25-15 25z" fill="#7B27EA"/><circle cx="18" cy="16" r="10.5" fill="#fff"/><rect x="12" y="14" width="12" height="8" rx="1.2" fill="#7B27EA"/><path d="M12 12.6l11.5-2.2" stroke="#7B27EA" stroke-width="2.2" stroke-linecap="round"/><path d="M16.8 15.6v4.8l3.8-2.4z" fill="#fff"/></svg><span class="wm">แกะรอย</span></div><div style="display:flex;align-items:center"><button class="bell" type="button" aria-label="การแจ้งเตือน"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.6 2H4.4z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg><i></i></button></div></div>
-    <div class="pg-h" style="align-items:center"><button class="back" type="button" id="payBack" aria-label="ย้อนกลับ" style="width:34px;height:34px;flex-basis:34px;background:#fff;border:1px solid #E6DDF6"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><h1 style="margin:0">ชำระเงิน</h1></div>
+    <div class="pg-h" style="align-items:center"><button class="back" type="button" id="payBack" aria-label="ย้อนกลับ" style="width:34px;height:34px;flex-basis:34px;background:#fff;border:1px solid #e3d8fc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button><h1 style="margin:0">ชำระเงิน</h1></div>
     <div class="paycard"><img id="payImg" src="" alt=""><div><span class="tg">แพ็กเกจ</span><b id="payName"></b><small id="paySub"></small></div><div class="pp" id="payPrice"></div></div>
     <div class="pbox"><h3>สิ่งที่คุณจะได้รับ</h3><div class="bens" id="payBen"></div></div>
-    <div class="pbox osum"><h3><svg width="20" height="22" viewBox="0 0 24 26" fill="none" stroke="#7B27EA" stroke-width="1.7"><path d="M5 2h14v22H5zM9 8h6M9 12h6M9 16h4"/></svg>สรุปรายการสั่งซื้อ</h3>
+    <div class="pbox osum"><h3><svg width="20" height="22" viewBox="0 0 24 26" fill="none" stroke="#848afc" stroke-width="1.7"><path d="M5 2h14v22H5zM9 8h6M9 12h6M9 16h4"/></svg>สรุปรายการสั่งซื้อ</h3>
       <div class="r"><span id="payLine"></span><span id="payLineP"></span></div><div class="t"><span>ยอดชำระทั้งหมด</span><b id="payTotal"></b></div></div>
-    <div class="pbox"><h3><svg width="22" height="20" viewBox="0 0 24 22" fill="none" stroke="#7B27EA" stroke-width="1.7" stroke-linejoin="round"><path d="M3 5h15v3H3zM3 8h18v12H3z"/><rect x="15" y="12" width="6" height="4" rx="1"/></svg>เลือกวิธีชำระเงิน</h3>
+    <div class="pbox"><h3><svg width="22" height="20" viewBox="0 0 24 22" fill="none" stroke="#848afc" stroke-width="1.7" stroke-linejoin="round"><path d="M3 5h15v3H3zM3 8h18v12H3z"/><rect x="15" y="12" width="6" height="4" rx="1"/></svg>เลือกวิธีชำระเงิน</h3>
       <div class="pm" id="payM">
-        <button type="button" class="on" data-pm="บัตรเครดิต / เดบิต"><span class="rd"></span><svg width="24" height="18" viewBox="0 0 24 18" fill="none" stroke="#7B27EA" stroke-width="1.6"><rect x="1" y="1" width="22" height="16" rx="2.5"/><path d="M1 6h22M4 12h4"/></svg>บัตรเครดิต / เดบิต<span class="br"><span>VISA</span><span>MASTERCARD</span><span>JCB</span></span></button>
+        <button type="button" class="on" data-pm="บัตรเครดิต / เดบิต"><span class="rd"></span><svg width="24" height="18" viewBox="0 0 24 18" fill="none" stroke="#848afc" stroke-width="1.6"><rect x="1" y="1" width="22" height="16" rx="2.5"/><path d="M1 6h22M4 12h4"/></svg>บัตรเครดิต / เดบิต<span class="br"><span>VISA</span><span>MASTERCARD</span><span>JCB</span></span></button>
         <button type="button" data-pm="สแกนจ่าย (PromptPay)"><span class="rd"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B3560" stroke-width="1.6"><path d="M3 8V3h5M16 3h5v5M21 16v5h-5M8 21H3v-5"/><rect x="7" y="7" width="4" height="4"/><rect x="13" y="7" width="4" height="4"/><rect x="7" y="13" width="4" height="4"/><rect x="13" y="13" width="4" height="4"/></svg>สแกนจ่าย (PromptPay)<span class="br"><span>PROMPTPAY</span></span></button>
-        <button type="button" data-pm="e-Wallet"><span class="rd"></span><svg width="24" height="20" viewBox="0 0 24 22" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M3 5h15v3H3zM3 8h18v12H3z"/><rect x="15" y="12" width="6" height="4" rx="1"/></svg>e-Wallet<span class="br"><span>TRUEMONEY</span><span>SHOPEEPAY</span></span></button>
+        <button type="button" data-pm="e-Wallet"><span class="rd"></span><svg width="24" height="20" viewBox="0 0 24 22" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M3 5h15v3H3zM3 8h18v12H3z"/><rect x="15" y="12" width="6" height="4" rx="1"/></svg>e-Wallet<span class="br"><span>TRUEMONEY</span><span>SHOPEEPAY</span></span></button>
       </div></div>
     <button class="paybtn" type="button" id="payGo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span id="payGoTx">ชำระเงิน</span></button>
   </section>
@@ -4995,12 +5070,12 @@ img {
     <p>ขอบคุณสำหรับการสั่งซื้อ<br>แพ็กเกจของคุณพร้อมใช้งานแล้ว</p>
     <div class="okc"><img id="pdImg" src="" alt=""><div><span class="tg">แพ็คเกจ</span><b id="pdName"></b><small id="pdSub"></small></div><div class="fr" id="pdPrice" style="font-size:24px"></div></div>
     <div class="oki">
-      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>หมายเลขคำสั่งซื้อ<span id="pdOrder"></span></div>
-      <div><svg width="22" height="18" viewBox="0 0 24 18" fill="none" stroke="#7B27EA" stroke-width="1.6"><rect x="1" y="1" width="22" height="16" rx="2.5"/><path d="M1 6h22M4 12h4"/></svg>ช่องทางชำระเงิน<span id="pdMethod"></span></div>
-      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>วันที่ชำระเงิน<span id="pdDate"></span></div>
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>หมายเลขคำสั่งซื้อ<span id="pdOrder"></span></div>
+      <div><svg width="22" height="18" viewBox="0 0 24 18" fill="none" stroke="#848afc" stroke-width="1.6"><rect x="1" y="1" width="22" height="16" rx="2.5"/><path d="M1 6h22M4 12h4"/></svg>ช่องทางชำระเงิน<span id="pdMethod"></span></div>
+      <div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>วันที่ชำระเงิน<span id="pdDate"></span></div>
     </div>
     <button class="bigbtn pri" type="button" data-gocreate><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>ไปสร้างทริปของฉัน <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
-    <button class="bigbtn sec" type="button" data-go="home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="1.8" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>กลับหน้าหลัก</button>
+    <button class="bigbtn sec" type="button" data-go="home"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.8" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>กลับหน้าหลัก</button>
     <div style="height:60px"></div>
   </section>
 
@@ -5017,7 +5092,7 @@ img {
     <div class="excard">
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ct_exp" alt="" id="ctImg">
       <div><span class="tg">แพ็กเกจ</span><b id="ctName">Explorer Pass</b><small id="ctSub">ตามรอยซีรีส์ยอดนิยม</small>
-        <div class="lm"><svg width="14" height="14" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#7B27EA"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="ctLim">เลือกซีรีส์ได้สูงสุด 1 เรื่อง</span></div></div>
+        <div class="lm"><svg width="14" height="14" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#848afc"/><path d="M4.6 8.3l2.3 2.2 4.4-4.6" stroke="#fff" stroke-width="1.9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="ctLim">เลือกซีรีส์ได้สูงสุด 1 เรื่อง</span></div></div>
       <div class="trial" id="ctTrial"><span>ทดลองใช้ฟรี<br>ครั้งแรก</span></div>
     </div>
     <div class="pick-h"><h2>เลือกซีรีส์ที่สนใจ</h2><p><span id="pickLim">เลือกได้สูงสุด 1 เรื่อง</span> (เลือกแล้ว <b id="pickN">1</b>/<span id="pickMax">1</span>)</p></div>
@@ -5032,7 +5107,7 @@ img {
     <div class="ct-h"><button type="button" data-go="create" aria-label="ย้อนกลับ"><svg width="26" height="22" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><h1>สร้างทริปใหม่</h1></div>
     <div class="stepper two"><div class="ln"><i></i></div><div class="stp a on"><span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><small>เลือกซีรีส์</small></div><div class="stp b on"><span>2</span><small>ตรวจสอบและยืนยัน</small></div></div>
     <div class="rv-h"><h2>ตรวจสอบเส้นทางของคุณ</h2><p id="rvSub">เส้นทางจาก 1 ซีรีส์ · 5 จุดหมาย</p></div>
-    <div class="rvs"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="rv_hero" alt="" id="rvImg"><div><b><svg width="20" height="18" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#7B27EA"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#A77AF0"/></svg>1 ซีรีส์</b><small>หนึ่งในร้อย</small></div></div>
+    <div class="rvs"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="rv_hero" alt="" id="rvImg"><div><b><svg width="20" height="18" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#848afc"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#a893f9"/></svg>1 ซีรีส์</b><small>หนึ่งในร้อย</small></div></div>
     <div class="stops" id="rvStops"></div>
     <button class="flowbtn" type="button" data-start>เริ่มทริป <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
     <img class="skyb" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="t_sky" alt="">
@@ -5059,13 +5134,13 @@ img {
       <div class="mp-bar"><i class="fill" id="mFill"></i><span id="mD1" style="left:0"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><span id="mD2" style="right:0"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></div>
       <div class="mp-lb"><div><svg width="12" height="13" viewBox="0 0 24 26" fill="#3B3560"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>เช็กอินที่สถานที่</div><div><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#3B3560" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg>ถ่ายรูปตามฉาก</div></div>
     </div>
-    <div class="mcard mc2"><div class="mrow"><span class="ic"><svg width="20" height="22" viewBox="0 0 24 26" fill="#7B27EA"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg></span><div class="tx"><b>ภารกิจที่ 1 : เช็กอิน</b><small id="mCheckSub">ยืนยันว่าคุณอยู่ที่มิวเซียมสยาม</small></div>
+    <div class="mcard mc2"><div class="mrow"><span class="ic"><svg width="20" height="22" viewBox="0 0 24 26" fill="#848afc"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg></span><div class="tx"><b>ภารกิจที่ 1 : เช็กอิน</b><small id="mCheckSub">ยืนยันว่าคุณอยู่ที่มิวเซียมสยาม</small></div>
       <button class="mbtn f" type="button" id="mCheck"><svg width="13" height="14" viewBox="0 0 24 26" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg><span>เช็กอินเลย</span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div></div>
-    <div class="mcard mc2"><div class="mrow"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg></span><div class="tx"><b>ภารกิจที่ 2 : ถ่ายรูปตามฉาก</b><small>ถ่ายภาพในมุมเดียวกับฉากจากซีรีส์</small></div>
+    <div class="mcard mc2"><div class="mrow"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg></span><div class="tx"><b>ภารกิจที่ 2 : ถ่ายรูปตามฉาก</b><small>ถ่ายภาพในมุมเดียวกับฉากจากซีรีส์</small></div>
       <button class="mbtn o" type="button" id="mPhoto"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg><span>ถ่ายรูป</span><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
       <div class="mex"><div class="exw" id="mEx1w"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ms_ex1" alt="ตัวอย่างจากในซีรีส์" id="mEx1" style="width:176px"><span class="lb" id="mEx1lb" style="display:none">ตัวอย่างจากในซีรีส์</span><span class="play" id="mEx1pl" style="display:none"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M7 4v16l13-8z"/></svg></span></div><div class="exw"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ms_ex2" alt="ตัวอย่างมุมถ่ายรูป" id="mShot" style="width:157px"><span class="lb" id="mEx2lb" style="display:none">ตัวอย่างมุมถ่ายรูป</span></div></div>
     </div>
-    <div class="mcard mc2"><div class="mrow"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.7" stroke-linejoin="round"><path d="M9 3h6v4l-1.5 5h5.5v4H5v-4h5.5L9 7zM4 20h16"/></svg></span><div class="tx"><b>รางวัลเมื่อทำภารกิจครบ</b><small>รับแสตมป์ดิจิทัล 1 ดวง</small></div>
+    <div class="mcard mc2"><div class="mrow"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.7" stroke-linejoin="round"><path d="M9 3h6v4l-1.5 5h5.5v4H5v-4h5.5L9 7zM4 20h16"/></svg></span><div class="tx"><b>รางวัลเมื่อทำภารกิจครบ</b><small>รับแสตมป์ดิจิทัล 1 ดวง</small></div>
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ms_stamp" alt="" id="mStampImg" style="width:78px;height:auto;margin:-14px -6px -10px 0;mix-blend-mode:multiply"><span class="mini" id="mStampMini" style="display:none"><img id="mMiniImg" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ms2_angle" alt=""><b id="mStampName"></b></span></div></div>
     <button class="mlock" type="button" id="mClaim" disabled><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>ทำภารกิจให้ครบเพื่อรับแสตมป์</span></button>
   </section>
@@ -5074,12 +5149,12 @@ img {
   <section class="view" id="stamp">
     <div class="sthtml" id="stHtml" style="display:none">
       <div class="sth"><button type="button" data-go="trips" aria-label="ย้อนกลับ"><svg width="24" height="20" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><span id="stTitle"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="#1A0B39"><circle cx="5" cy="12" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="19" cy="12" r="1.8"/></svg></div>
-      <div class="stbadge"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#7B27EA"/><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ภารกิจสำเร็จ</div>
-      <button class="stsave" type="button" data-toast="บันทึกแสตมป์ลงคอลเลกชันแล้ว"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5A1BC7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>บันทึก<br>แสตมป์</button>
+      <div class="stbadge"><svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#848afc"/><path d="M7 12.5l3.5 3.5L17 9" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>ภารกิจสำเร็จ</div>
+      <button class="stsave" type="button" data-toast="บันทึกแสตมป์ลงคอลเลกชันแล้ว"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg>บันทึก<br>แสตมป์</button>
       <div class="stget">คุณได้รับ</div>
       <div class="stbig">ดิจิทัลแสตมป์</div>
       <div class="stamp-wrap"><div class="stamp-f"><div class="inr"><div class="stamp-i"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ms2_angle" alt="" id="stImg"><div class="stn"><b id="stName"></b><i id="stEn"></i></div></div>
-        <div class="stser"><svg width="16" height="15" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#5A1BC7"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#8A5CE0"/></svg><span id="stSer">เรื่องหนึ่งในร้อย</span></div></div></div></div>
+        <div class="stser"><svg width="16" height="15" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#848afc"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#967bfe"/></svg><span id="stSer">เรื่องหนึ่งในร้อย</span></div></div></div></div>
     </div>
     <div class="sttop" id="stTop">
       <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="st_top" alt="ภารกิจสำเร็จ คุณได้รับดิจิทัลแสตมป์ มิวเซียมสยาม Museum Siam เรื่องหนึ่งในร้อย">
@@ -5091,7 +5166,7 @@ img {
       <div class="st5" id="stDots"></div>
     </div>
     <button class="stb p" type="button" data-nextstop><svg width="20" height="22" viewBox="0 0 24 26" fill="none" stroke="#fff" stroke-width="2"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg>ไปยังสถานที่ถัดไป <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
-    <button class="stb s" type="button" data-go="trips"><svg width="22" height="18" viewBox="0 0 24 20" fill="none" stroke="#5A1BC7" stroke-width="2" stroke-linecap="round"><path d="M8 3h14M8 10h14M8 17h14"/><circle cx="3" cy="3" r="1.3" fill="#5A1BC7"/><circle cx="3" cy="10" r="1.3" fill="#5A1BC7"/><circle cx="3" cy="17" r="1.3" fill="#5A1BC7"/></svg>กลับไปที่ทริปของฉัน</button>
+    <button class="stb s" type="button" data-go="trips"><svg width="22" height="18" viewBox="0 0 24 20" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><path d="M8 3h14M8 10h14M8 17h14"/><circle cx="3" cy="3" r="1.3" fill="#848afc"/><circle cx="3" cy="10" r="1.3" fill="#848afc"/><circle cx="3" cy="17" r="1.3" fill="#848afc"/></svg>กลับไปที่ทริปของฉัน</button>
     <div style="height:24px"></div>
   </section>
 
@@ -5099,30 +5174,30 @@ img {
   <section class="view" id="tripdone">
     <div class="td-top"><button type="button" id="tdBack" aria-label="ย้อนกลับ"><svg width="24" height="20" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><h1>ทริปสำเร็จ</h1></div>
     <div class="td-hero">
-      <svg class="conf" viewBox="0 0 390 260" aria-hidden="true"><g opacity=".8"><rect x="40" y="40" width="8" height="14" rx="2" fill="#F5A9C8" transform="rotate(25 44 47)"/><rect x="330" y="60" width="8" height="14" rx="2" fill="#9A6AF0" transform="rotate(-30 334 67)"/><circle cx="72" cy="150" r="5" fill="#FBBF24"/><circle cx="318" cy="170" r="5" fill="#7B27EA"/><rect x="300" y="20" width="7" height="12" rx="2" fill="#FBBF24" transform="rotate(40 303 26)"/><rect x="60" y="210" width="7" height="12" rx="2" fill="#9A6AF0" transform="rotate(-20 63 216)"/><path d="M345 120l4 8 8 1-6 6 2 8-8-4-7 4 2-8-6-6 8-1z" fill="#FBBF24"/><path d="M30 95l3 6 6 1-4 4 1 6-6-3-5 3 1-6-4-4 6-1z" fill="#C9B6F5"/></g></svg>
+      <svg class="conf" viewBox="0 0 390 260" aria-hidden="true"><g opacity=".8"><rect x="40" y="40" width="8" height="14" rx="2" fill="#F5A9C8" transform="rotate(25 44 47)"/><rect x="330" y="60" width="8" height="14" rx="2" fill="#a893f9" transform="rotate(-30 334 67)"/><circle cx="72" cy="150" r="5" fill="#FBBF24"/><circle cx="318" cy="170" r="5" fill="#848afc"/><rect x="300" y="20" width="7" height="12" rx="2" fill="#FBBF24" transform="rotate(40 303 26)"/><rect x="60" y="210" width="7" height="12" rx="2" fill="#a893f9" transform="rotate(-20 63 216)"/><path d="M345 120l4 8 8 1-6 6 2 8-8-4-7 4 2-8-6-6 8-1z" fill="#FBBF24"/><path d="M30 95l3 6 6 1-4 4 1 6-6-3-5 3 1-6-4-4 6-1z" fill="#c6b0f8"/></g></svg>
       <svg class="seal" width="170" height="170" viewBox="0 0 200 200" role="img" aria-label="ตราประทับดิจิทัล หนึ่งในร้อย เขตพระนคร">
   <defs><path id="sealArc" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/>
-  <linearGradient id="sealG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9A4DF2"/><stop offset="1" stop-color="#5A1BC7"/></linearGradient></defs>
+  <linearGradient id="sealG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#967bfe"/><stop offset="1" stop-color="#848afc"/></linearGradient></defs>
   <g fill="url(#sealG)"><circle cx="192.0" cy="100.0" r="9"/><circle cx="190.6" cy="116.0" r="9"/><circle cx="186.5" cy="131.5" r="9"/><circle cx="179.7" cy="146.0" r="9"/><circle cx="170.5" cy="159.1" r="9"/><circle cx="159.1" cy="170.5" r="9"/><circle cx="146.0" cy="179.7" r="9"/><circle cx="131.5" cy="186.5" r="9"/><circle cx="116.0" cy="190.6" r="9"/><circle cx="100.0" cy="192.0" r="9"/><circle cx="84.0" cy="190.6" r="9"/><circle cx="68.5" cy="186.5" r="9"/><circle cx="54.0" cy="179.7" r="9"/><circle cx="40.9" cy="170.5" r="9"/><circle cx="29.5" cy="159.1" r="9"/><circle cx="20.3" cy="146.0" r="9"/><circle cx="13.5" cy="131.5" r="9"/><circle cx="9.4" cy="116.0" r="9"/><circle cx="8.0" cy="100.0" r="9"/><circle cx="9.4" cy="84.0" r="9"/><circle cx="13.5" cy="68.5" r="9"/><circle cx="20.3" cy="54.0" r="9"/><circle cx="29.5" cy="40.9" r="9"/><circle cx="40.9" cy="29.5" r="9"/><circle cx="54.0" cy="20.3" r="9"/><circle cx="68.5" cy="13.5" r="9"/><circle cx="84.0" cy="9.4" r="9"/><circle cx="100.0" cy="8.0" r="9"/><circle cx="116.0" cy="9.4" r="9"/><circle cx="131.5" cy="13.5" r="9"/><circle cx="146.0" cy="20.3" r="9"/><circle cx="159.1" cy="29.5" r="9"/><circle cx="170.5" cy="40.9" r="9"/><circle cx="179.7" cy="54.0" r="9"/><circle cx="186.5" cy="68.5" r="9"/><circle cx="190.6" cy="84.0" r="9"/><circle cx="100" cy="100" r="92"/></g>
   <circle cx="100" cy="100" r="82" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="3 4" opacity=".8"/>
   <circle cx="100" cy="100" r="56" fill="#fff"/>
   <text font-family="Prompt,Loma,sans-serif" font-size="12.5" font-weight="600" fill="#fff" letter-spacing="1"><textPath href="#sealArc" startOffset="0" textLength="440" lengthAdjust="spacingAndGlyphs" id="sealRing">แกะรอย ✦ ตามรอยครบ 5 จุด ✦ เขตพระนคร ✦ 2569 ✦</textPath></text>
-  <g transform="translate(100 74)"><path d="M0 20S-11 9.5-11 1a11 11 0 0 1 22 0C11 9.5 0 20 0 20z" fill="#7B27EA"/><circle cx="0" cy="1" r="5" fill="#fff"/></g>
+  <g transform="translate(100 74)"><path d="M0 20S-11 9.5-11 1a11 11 0 0 1 22 0C11 9.5 0 20 0 20z" fill="#848afc"/><circle cx="0" cy="1" r="5" fill="#fff"/></g>
   <text x="100" y="116" text-anchor="middle" font-family="Prompt,Loma,sans-serif" font-size="17" font-weight="700" fill="#2A0D6E" id="sealName">หนึ่งในร้อย</text>
-  <text x="100" y="133" text-anchor="middle" font-family="Prompt,Loma,sans-serif" font-size="9.5" font-weight="600" letter-spacing="1" fill="#5A1BC7">SCENE QUEST</text>
+  <text x="100" y="133" text-anchor="middle" font-family="Prompt,Loma,sans-serif" font-size="9.5" font-weight="600" letter-spacing="1" fill="#848afc">SCENE QUEST</text>
 </svg>
       <h2 id="tdH">ยินดีด้วย! ตามรอยครบ 5 จุด</h2>
-      <p>คุณได้รับ <b style="color:#6E22E0">ตราประทับดิจิทัล</b> <span id="tdS">เรื่องหนึ่งในร้อย</span> · เขตพระนคร</p>
+      <p>คุณได้รับ <b style="color:#111111">ตราประทับดิจิทัล</b> <span id="tdS">เรื่องหนึ่งในร้อย</span> · เขตพระนคร</p>
       <div class="td-stamps" id="tdStamps"></div>
     </div>
     <div class="td-card">
-      <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="6" y="6" width="12" height="10"/></svg>กรอบโพลารอยด์ที่ระลึก</h3>
+      <h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="6" y="6" width="12" height="10"/></svg>กรอบโพลารอยด์ที่ระลึก</h3>
       <p class="d">เลือกรูปของคุณจากทริปนี้ แล้วแอปจะใส่กรอบของซีรีส์ให้อัตโนมัติ</p>
       <div class="pol-wrap"><canvas id="polCv" width="1080" height="1320"></canvas></div>
-      <div class="fstyles" id="polStyles"><button type="button" class="on" data-fs="lav"><i style="background:#EDE3FD"></i>ม่วงแกะรอย</button><button type="button" data-fs="cream"><i style="background:#F6EBD9"></i>วินเทจ</button><button type="button" data-fs="night"><i style="background:#22153F"></i>กลางคืน</button></div>
+      <div class="fstyles" id="polStyles"><button type="button" class="on" data-fs="lav"><i style="background:#ebe4fd"></i>ม่วงแกะรอย</button><button type="button" data-fs="cream"><i style="background:#F6EBD9"></i>วินเทจ</button><button type="button" data-fs="night"><i style="background:#22153F"></i>กลางคืน</button></div>
       <div class="pol-lock" id="polLockNote" style="display:none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#17865A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="polLockTx">รับกรอบแล้ว</span></div>
       <div class="td-acts" id="polEdit">
-        <label class="a1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="1.9" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg>เลือกรูปของฉัน<input type="file" accept="image/*" id="polFile" style="display:none"></label>
+        <label class="a1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.9" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg>เลือกรูปของฉัน<input type="file" accept="image/*" id="polFile" style="display:none"></label>
         <button type="button" class="a2" id="polClaim" disabled>ยืนยันรับกรอบ</button>
       </div>
       <p class="pol-warn" id="polWarn">เลือกรูปของคุณก่อน · รับกรอบได้เพียงครั้งเดียว เปลี่ยนรูปภายหลังไม่ได้</p>
@@ -5157,7 +5232,7 @@ img {
   <!-- ===================== PACKAGE COUPONS : คูปองจากแพ็กเกจ – เลือกได้ 2 ร้าน ===================== -->
   <section class="view" id="cppkg">
     <div class="cp-t"><button type="button" data-go="cphub" aria-label="ย้อนกลับ"><svg width="24" height="20" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><h1>คูปองจากแพ็กเกจ</h1></div>
-    <div class="cph" style="margin-top:10px"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_tk2" alt="" width="80"><div><div style="font-size:15px;font-weight:700;color:var(--ink)">สิทธิ์อาหารจากแพ็กเกจ</div><div style="font-size:13px;color:#2E2A40">เลือกใช้ได้ 2 ร้าน</div></div><span class="bdg" style="margin-top:10px;height:32px;font-size:14px">เหลือ&nbsp;<span class="cpLeft">2</span>&nbsp;สิทธิ์</span></div>
+    <div class="cph" style="margin-top:10px"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_tk2" alt="" width="80"><div><div style="font-size:15px;font-weight:700;color:var(--ink)">สิทธิ์อาหารจากแพ็กเกจ</div><div style="font-size:13px;color:#111111">เลือกใช้ได้ 2 ร้าน</div></div><span class="bdg" style="margin-top:10px;height:32px;font-size:14px">เหลือ&nbsp;<span class="cpLeft">2</span>&nbsp;สิทธิ์</span></div>
     <div class="plist" style="gap:7px;margin-top:12px;margin-bottom:0"><button type="button" class="srow on" data-shop="s1"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s1" alt=""><div class="x"><b>ร้านผัดไทยท่าเตียน</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 200 ม.</div><span class="of">ชุดอาหารพร้อมรับประทาน<br>(มูลค่า 20 บาท)</span></div><span class="rd"></span></button><button type="button" class="srow" data-shop="s2"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s2" alt=""><div class="x"><b>ร้านข้าวเหนียวมะม่วงพระอาทิตย์</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 350 ม.</div><span class="of">ข้าวเหนียวมะม่วง 1 ชุด<br>(มูลค่า 20 บาท)</span></div><span class="rd"></span></button><button type="button" class="srow" data-shop="s3"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s3" alt=""><div class="x"><b>ร้านก๋วยเตี๋ยวเรือริมคลอง</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 450 ม.</div><span class="of">ก๋วยเตี๋ยวเรือ 1 ชาม<br>(มูลค่า 20 บาท)</span></div><span class="rd"></span></button><button type="button" class="srow" data-shop="s4"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s4" alt=""><div class="x"><b>ร้านชาตามตรอก</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 500 ม.</div><span class="of">เครื่องดื่ม (ชาไทย/ชานม) 1 แก้ว<br>(มูลค่า 20 บาท)</span></div><span class="rd"></span></button></div>
     <button type="button" class="cpbtn" id="cpUse">ใช้คูปองร้านที่เลือก <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
   </section>
@@ -5165,7 +5240,7 @@ img {
   <!-- ===================== PARTNER COUPONS : คูปองร้านค้าพันธมิตร – ใช้ได้ไม่จำกัด กรองอาหาร/เครื่องดื่ม ===================== -->
   <section class="view" id="cppar">
     <div class="cp-t"><button type="button" data-go="cphub" aria-label="ย้อนกลับ"><svg width="24" height="20" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><h1>คูปองเสริมจากร้านค้า</h1></div>
-    <div class="cph" style="margin-top:8px"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_pct" alt="" width="90"><div><div style="font-size:16.5px;font-weight:700;color:var(--ink);line-height:1.3">โปรโมชั่นพิเศษจากร้านพันธมิตร</div><div style="font-size:12.5px;color:#2E2A40">ใช้ได้หลายร้านตามเงื่อนไข</div></div></div>
+    <div class="cph" style="margin-top:8px"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_pct" alt="" width="90"><div><div style="font-size:16.5px;font-weight:700;color:var(--ink);line-height:1.3">โปรโมชั่นพิเศษจากร้านพันธมิตร</div><div style="font-size:12.5px;color:#111111">ใช้ได้หลายร้านตามเงื่อนไข</div></div></div>
     <div class="chips2"><button type="button" class="on" data-cat-f="all">ทั้งหมด (6)</button><button type="button" data-cat-f="food">อาหาร (4)</button><button type="button" data-cat-f="drink">เครื่องดื่ม (2)</button></div>
     <div class="plist"><button type="button" class="prow" data-partner="p1" data-cat="food"><span class="im"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_p1" alt=""></span><div class="x"><b>ร้านอาหารบ้านวัง</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 250 ม.</div><div class="of">ส่วนลด 10%<br>เมื่อทานอาหารครบ 200 บาท</div></div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button><button type="button" class="prow" data-partner="p2" data-cat="drink"><span class="im"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_p2" alt=""></span><div class="x"><b>คาเฟ่ริมแม่น้ำ</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 400 ม.</div><div class="of">ส่วนลด 15%<br>สำหรับเครื่องดื่มทุกเมนู</div></div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button><button type="button" class="prow" data-partner="p3" data-cat="food"><span class="im"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_p3" alt=""></span><div class="x"><b>ขนมครกคุณย่า</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 600 ม.</div><div class="of">ส่วนลด 10%<br>เมื่อซื้อครบ 100 บาท</div></div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button><button type="button" class="prow" data-partner="p4" data-cat="food"><span class="im"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s2" alt=""><em><small>ลด</small>10%</em></span><div class="x"><b>บ้านมะม่วงหวาน</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 700 ม.</div><div class="of">ส่วนลด 10%<br>สำหรับเมนูข้าวเหนียวมะม่วง</div></div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button><button type="button" class="prow" data-partner="p5" data-cat="food"><span class="im"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s3" alt=""><em><small>ลด</small>10%</em></span><div class="x"><b>ก๋วยเตี๋ยวเรือท่าช้าง</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 800 ม.</div><div class="of">ส่วนลด 10%<br>เมื่อสั่งครบ 2 ชาม</div></div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button><button type="button" class="prow" data-partner="p6" data-cat="drink"><span class="im"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="cp_s4" alt=""><em><small>ลด</small>15%</em></span><div class="x"><b>ชาไทยหน้าวัง</b><div class="ds"><svg width="11" height="13" viewBox="0 0 24 26" fill="#3B2A6E"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>ห่าง 900 ม.</div><div class="of">ส่วนลด 15%<br>สำหรับเมนูชาทุกแก้ว</div></div><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button></div>
   </section>
@@ -5180,7 +5255,7 @@ img {
       <div class="doff" id="dOffWrap"><span id="dOffIc"></span><div id="dOff"></div></div>
       <div class="dhint" id="dHint">แสดงคูปองนี้ต่อพนักงานเพื่อแลกรับอาหาร</div>
       <div class="dqr"><div id="dQr"></div><code id="dCode"></code><span class="ust" id="dUse"></span></div>
-      <div class="dval"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A1BC7" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ใช้ได้ถึง 31 ธ.ค. 2569</div>
+      <div class="dval"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>ใช้ได้ถึง 31 ธ.ค. 2569</div>
     </div>
     <div class="dcond" id="dCond"><button type="button" id="dCondBtn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5h.01"/></svg>เงื่อนไขการใช้คูปอง<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1A0B39" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
       <ul id="dCondList"></ul></div>
@@ -5203,9 +5278,9 @@ img {
     <div class="sdinfo" id="sdInfo"><div class="tg" id="sdTags"></div><p id="sdSyn"></p>
       <button class="hplay" type="button" data-toast="เปิดตัวอย่างซีรีส์"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><path d="M7 4v16l13-8z"/></svg></span>ดูตัวอย่าง</button></div>
     <div class="sdst">
-      <div class="a"><svg width="26" height="28" viewBox="0 0 24 26" fill="none" stroke="#5A1BC7" stroke-width="1.8"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg><div><b>ค้นพบ <big id="sdSpots">3</big> จุดตามรอย</b><small>พื้นที่พระนคร กรุงเทพมหานคร</small></div></div>
-      <div class="b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5A1BC7" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 8l1.6-4.6 16.4-.4L21 8M10 12.3v5.2l4.4-2.6z"/></svg><span id="sdEps">8 ตอน</span></div>
-      <button class="c" type="button" id="sdGalBtn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5A1BC7" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>ภาพบรรยากาศ<br>จากซีรีส์</button>
+      <div class="a"><svg width="26" height="28" viewBox="0 0 24 26" fill="none" stroke="#848afc" stroke-width="1.8"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg><div><b>ค้นพบ <big id="sdSpots">3</big> จุดตามรอย</b><small>พื้นที่พระนคร กรุงเทพมหานคร</small></div></div>
+      <div class="b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="M3 8l1.6-4.6 16.4-.4L21 8M10 12.3v5.2l4.4-2.6z"/></svg><span id="sdEps">8 ตอน</span></div>
+      <button class="c" type="button" id="sdGalBtn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.7" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/></svg>ภาพบรรยากาศ<br>จากซีรีส์</button>
     </div>
     <div class="sd-h" id="sdGalH">ตัวอย่างบรรยากาศในซีรีส์</div>
     <div class="gal" id="sdGal"></div>
@@ -5219,7 +5294,7 @@ img {
 
   <!-- ===================== NOTIFICATIONS : หน้าการแจ้งเตือน (รายการสร้างจาก JS: ntPaint) ===================== -->
   <section class="view" id="notif">
-    <div class="cp-t" style="justify-content:flex-start"><button type="button" id="ntBack" aria-label="ย้อนกลับ"><svg width="24" height="20" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><h1>การแจ้งเตือน</h1><button type="button" id="ntRead" style="margin-left:auto;margin-right:12px;color:#6E22E0;font-size:12.5px;font-weight:600">อ่านทั้งหมดแล้ว</button></div>
+    <div class="cp-t" style="justify-content:flex-start"><button type="button" id="ntBack" aria-label="ย้อนกลับ"><svg width="24" height="20" viewBox="0 0 26 22" fill="none" stroke="#1A0B39" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 11H3M11 3l-8 8 8 8"/></svg></button><h1>การแจ้งเตือน</h1><button type="button" id="ntRead" style="margin-left:auto;margin-right:12px;color:#111111;font-size:12.5px;font-weight:600">อ่านทั้งหมดแล้ว</button></div>
     <div class="ntl" id="ntList" style="margin:14px 12px 24px;max-height:none"></div>
   </section>
 
@@ -5261,14 +5336,14 @@ img {
       <div class="sh-lb">สถานที่</div>
       <div class="sh-chips" id="shPlace"><button type="button">มิวเซียมสยาม</button><button type="button">พระบรมมหาราชวัง</button><button type="button">ถนนราชดำเนิน</button><button type="button">วัดอรุณฯ</button><button type="button">ชุมชนเลื่อนฤทธิ์</button></div>
       <div class="sh-lb">รูปภาพ (สูงสุด 4 รูป)</div>
-      <div class="sh-ph" id="shPh"><label class="add" id="shAdd"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg>เพิ่มรูป<input type="file" accept="image/*" multiple id="shFile" style="display:none"></label></div>
+      <div class="sh-ph" id="shPh"><label class="add" id="shAdd"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.8" stroke-linejoin="round"><path d="M3 8h4l2-3h6l2 3h4v12H3z"/><circle cx="12" cy="13.5" r="3.6"/></svg>เพิ่มรูป<input type="file" accept="image/*" multiple id="shFile" style="display:none"></label></div>
     </div>
   </div>
 
   <div class="sheet-bg" id="locBg"></div>
   <div class="sheet locsheet" id="locSheet" role="dialog" aria-modal="true" aria-label="เลือกเขต">
     <div style="padding:16px 16px 22px">
-      <div style="width:40px;height:4px;border-radius:2px;background:#DDD6EA;margin:-6px auto 12px"></div>
+      <div style="width:40px;height:4px;border-radius:2px;background:#c6b0f8;margin:-6px auto 12px"></div>
       <h2>เลือกเขตที่อยากตามรอย</h2><div class="sub">ดูว่าเขตไหนมีซีรีส์ที่ถ่ายทำให้ไปตามรอย</div>
       <div class="locl" id="locList"></div>
     </div>
@@ -5277,13 +5352,13 @@ img {
   <div class="sheet-bg" id="cfBg"></div>
   <div class="sheet" id="cfSheet" role="dialog" aria-modal="true" aria-label="ยืนยันรับกรอบ">
     <div style="padding:18px 18px 24px;text-align:center">
-      <div style="width:40px;height:4px;border-radius:2px;background:#DDD6EA;margin:-6px auto 14px"></div>
+      <div style="width:40px;height:4px;border-radius:2px;background:#c6b0f8;margin:-6px auto 14px"></div>
       <img id="cfPrev" alt="" style="width:120px;border-radius:4px;box-shadow:0 6px 16px rgba(40,20,90,.2);transform:rotate(-2deg)">
       <h2 style="margin:14px 0 0;font-size:18px;font-weight:700;color:var(--ink)">ยืนยันใช้รูปนี้?</h2>
       <p style="margin:6px 0 0;font-size:12.5px;line-height:1.55;color:var(--mute)">กรอบโพลารอยด์รับได้เพียงครั้งเดียวต่อทริป<br>เมื่อยืนยันแล้วจะเปลี่ยนรูปหรือสีกรอบไม่ได้อีก</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px">
-        <button type="button" id="cfNo" style="height:44px;border-radius:22px;border:1.5px solid #CDB8F5;background:#fff;color:var(--ink2);font-size:14px;font-weight:600">กลับไปแก้</button>
-        <button type="button" id="cfYes" style="height:44px;border-radius:22px;border:0;background:linear-gradient(90deg,#9A4DF2,#6E22E0);color:#fff;font-size:14px;font-weight:600">ยืนยันรับกรอบ</button>
+        <button type="button" id="cfNo" style="height:44px;border-radius:22px;border:1.5px solid #c6b0f8;background:#fff;color:var(--ink2);font-size:14px;font-weight:600">กลับไปแก้</button>
+        <button type="button" id="cfYes" style="height:44px;border-radius:22px;border:0;background:linear-gradient(90deg,#967bfe,#848afc);color:#fff;font-size:14px;font-weight:600">ยืนยันรับกรอบ</button>
       </div>
     </div>
   </div>
@@ -5291,17 +5366,17 @@ img {
   <div class="sheet-bg" id="trBg"></div>
   <div class="sheet" id="trSheet" role="dialog" aria-modal="true" aria-label="ยืนยันใช้สิทธิ์ทดลองใช้ฟรี">
     <div style="padding:18px 18px 24px">
-      <div style="width:40px;height:4px;border-radius:2px;background:#DDD6EA;margin:-6px auto 14px"></div>
-      <div style="display:flex;align-items:center;gap:12px;background:#F7F3FD;border-radius:14px;padding:8px">
+      <div style="width:40px;height:4px;border-radius:2px;background:#c6b0f8;margin:-6px auto 14px"></div>
+      <div style="display:flex;align-items:center;gap:12px;background:#f6f2fe;border-radius:14px;padding:8px">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ok_thumb" alt="" style="width:76px;height:60px;border-radius:9px;object-fit:cover">
-        <div style="flex:1"><div style="font-size:17px;font-weight:700;color:var(--ink)">Explorer Pass</div><div style="font-size:11.5px;color:#2E2A40">ตามรอยซีรีส์ยอดนิยม</div></div>
-        <div style="padding:0 8px 0 12px;border-left:1px solid #E2D9F2;font-size:22px;font-weight:700;color:#8A3CF0">ฟรี</div>
+        <div style="flex:1"><div style="font-size:17px;font-weight:700;color:var(--ink)">Explorer Pass</div><div style="font-size:11.5px;color:#111111">ตามรอยซีรีส์ยอดนิยม</div></div>
+        <div style="padding:0 8px 0 12px;border-left:1px solid #ddd1fb;font-size:22px;font-weight:700;color:#111111">ฟรี</div>
       </div>
       <h2 style="margin:16px 0 0;text-align:center;font-size:18px;font-weight:700;color:var(--ink)">ยืนยันใช้สิทธิ์ทดลองใช้ฟรี?</h2>
       <p style="margin:6px 0 0;text-align:center;font-size:12.5px;line-height:1.6;color:var(--mute)">สิทธิ์ทดลองใช้ฟรีใช้ได้ <b style="color:var(--ink)">1 ครั้งต่อบัญชี</b><br>เลือกซีรีส์ได้ 1 เรื่อง · ไม่มีค่าใช้จ่าย</p>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px">
-        <button type="button" id="trNo" style="height:44px;border-radius:22px;border:1.5px solid #CDB8F5;background:#fff;color:var(--ink2);font-size:14px;font-weight:600">ยกเลิก</button>
-        <button type="button" id="trYes" style="height:44px;border-radius:22px;border:0;background:linear-gradient(90deg,#9A4DF2,#6E22E0);color:#fff;font-size:14px;font-weight:600">ยืนยันใช้สิทธิ์ฟรี</button>
+        <button type="button" id="trNo" style="height:44px;border-radius:22px;border:1.5px solid #c6b0f8;background:#fff;color:var(--ink2);font-size:14px;font-weight:600">ยกเลิก</button>
+        <button type="button" id="trYes" style="height:44px;border-radius:22px;border:0;background:linear-gradient(90deg,#967bfe,#848afc);color:#fff;font-size:14px;font-weight:600">ยืนยันใช้สิทธิ์ฟรี</button>
       </div>
     </div>
   </div>
@@ -5309,17 +5384,17 @@ img {
   <div class="sheet-bg" id="ftBg"></div>
   <div class="sheet" id="ftSheet" role="dialog" aria-modal="true" aria-label="คุณมีสิทธิ์ทดลองใช้ฟรี">
     <div style="padding:18px 18px 24px">
-      <div style="width:40px;height:4px;border-radius:2px;background:#DDD6EA;margin:-6px auto 14px"></div>
-      <div style="display:flex;justify-content:center"><span style="display:inline-flex;align-items:center;gap:6px;background:#FCE68A;color:#3A2A00;font-size:12px;font-weight:600;border-radius:12px;padding:3px 12px"><svg width="14" height="14" viewBox="0 0 24 24" fill="#3A2A00"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>สิทธิ์สำหรับผู้ใช้ใหม่</span></div>
+      <div style="width:40px;height:4px;border-radius:2px;background:#c6b0f8;margin:-6px auto 14px"></div>
+      <div style="display:flex;justify-content:center"><span style="display:inline-flex;align-items:center;gap:6px;background:#FCE68A;color:#111111;font-size:12px;font-weight:600;border-radius:12px;padding:3px 12px"><svg width="14" height="14" viewBox="0 0 24 24" fill="#3A2A00"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21l1.6-7L2 9.2l7.1-.6z"/></svg>สิทธิ์สำหรับผู้ใช้ใหม่</span></div>
       <h2 style="margin:12px 0 0;text-align:center;font-size:19px;font-weight:700;color:var(--ink)">คุณยังมีสิทธิ์ทดลองใช้ฟรี!</h2>
       <p style="margin:6px 0 0;text-align:center;font-size:12.5px;line-height:1.6;color:var(--mute)">ก่อนซื้อ <b id="ftPk" style="color:var(--ink)">Fan Pass</b> ลองตามรอยฟรีด้วย<br><b style="color:var(--ink)">Explorer Pass</b> ได้ 1 ครั้ง · เลือกซีรีส์ได้ 1 เรื่อง ไม่มีค่าใช้จ่าย</p>
-      <div style="display:flex;align-items:center;gap:12px;background:#F7F3FD;border-radius:14px;padding:8px;margin-top:14px">
+      <div style="display:flex;align-items:center;gap:12px;background:#f6f2fe;border-radius:14px;padding:8px;margin-top:14px">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" data-src="ok_thumb" alt="" style="width:66px;height:52px;border-radius:9px;object-fit:cover">
-        <div style="flex:1"><div style="font-size:15px;font-weight:700;color:var(--ink)">Explorer Pass</div><div style="font-size:11px;color:#2E2A40">ทดลองใช้ฟรีครั้งแรก</div></div>
-        <div style="padding:0 8px 0 12px;border-left:1px solid #E2D9F2;font-size:20px;font-weight:700;color:#8A3CF0">ฟรี</div>
+        <div style="flex:1"><div style="font-size:15px;font-weight:700;color:var(--ink)">Explorer Pass</div><div style="font-size:11px;color:#111111">ทดลองใช้ฟรีครั้งแรก</div></div>
+        <div style="padding:0 8px 0 12px;border-left:1px solid #ddd1fb;font-size:20px;font-weight:700;color:#111111">ฟรี</div>
       </div>
-      <button type="button" id="ftFree" style="display:block;width:100%;height:46px;margin-top:16px;border-radius:23px;border:0;background:linear-gradient(90deg,#9A4DF2,#6E22E0);color:#fff;font-size:15px;font-weight:600;box-shadow:0 6px 16px rgba(123,39,234,.3)">ใช้สิทธิ์ทดลองฟรีก่อน</button>
-      <button type="button" id="ftPay" style="display:block;width:100%;height:44px;margin-top:8px;border-radius:22px;border:1.5px solid #CDB8F5;background:#fff;color:var(--ink2);font-size:14px;font-weight:600">ซื้อ <span id="ftPk2">Fan Pass</span> ต่อ</button>
+      <button type="button" id="ftFree" style="display:block;width:100%;height:46px;margin-top:16px;border-radius:23px;border:0;background:linear-gradient(90deg,#967bfe,#848afc);color:#fff;font-size:15px;font-weight:600;box-shadow:0 6px 16px rgba(132, 138, 252, .3)">ใช้สิทธิ์ทดลองฟรีก่อน</button>
+      <button type="button" id="ftPay" style="display:block;width:100%;height:44px;margin-top:8px;border-radius:22px;border:1.5px solid #c6b0f8;background:#fff;color:var(--ink2);font-size:14px;font-weight:600">ซื้อ <span id="ftPk2">Fan Pass</span> ต่อ</button>
     </div>
   </div>
 
@@ -5411,7 +5486,7 @@ img {
               r.id +
               '"><span class="th"><img src="' +
               r.img +
-              '" alt=""></span><span class="x"><span class="k"><svg width="14" height="12" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#7B27EA"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#A77AF0"/></svg>ทริปตามรอยซีรีส์</span><b>' +
+              '" alt=""></span><span class="x"><span class="k"><svg width="14" height="12" viewBox="0 0 24 22"><rect x="2" y="8" width="20" height="13" rx="2" fill="#848afc"/><path d="M2 8l1.6-5 17-.5L22 8z" fill="#a893f9"/></svg>ทริปตามรอยซีรีส์</span><b>' +
               r.series +
               '</b><span class="m"><span>📍 ' +
               r.dist +
@@ -5628,8 +5703,8 @@ img {
         : d.offer + '<small>' + d.offer2 + '</small>';
     document.getElementById('dOffIc').innerHTML =
       type === 'pkg'
-        ? '<svg width="26" height="30" viewBox="0 0 24 28" fill="none" stroke="#5A1BC7" stroke-width="2" stroke-linecap="round"><path d="M6 2v8a3 3 0 0 0 6 0V2M9 2v24M18 2c-2 1-3 4-3 8s1 5 3 5v11"/></svg>'
-        : '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#5A1BC7" stroke-width="2" stroke-linecap="round"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg>';
+        ? '<svg width="26" height="30" viewBox="0 0 24 28" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><path d="M6 2v8a3 3 0 0 0 6 0V2M9 2v24M18 2c-2 1-3 4-3 8s1 5 3 5v11"/></svg>'
+        : '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round"><path d="M19 5L5 19"/><circle cx="7" cy="7" r="2.5"/><circle cx="17" cy="17" r="2.5"/></svg>';
     document.getElementById('dHint').textContent =
       type === 'pkg'
         ? 'แสดงคูปองนี้ต่อพนักงานเพื่อแลกรับอาหาร'
@@ -5757,19 +5832,19 @@ img {
         code: 'EX',
         ben: [
           [
-            '<svg width="26" height="24" viewBox="0 0 24 22" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M2 8l1.6-5 17-.5L22 8M9.5 11.5v6l5-3z"/></svg>',
+            '<svg width="26" height="24" viewBox="0 0 24 22" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M2 8l1.6-5 17-.5L22 8M9.5 11.5v6l5-3z"/></svg>',
             'เลือกซีรีส์ได้<br>1 เรื่อง',
           ],
           [
-            '<svg width="22" height="26" viewBox="0 0 24 26" fill="none" stroke="#7B27EA" stroke-width="1.7"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg>',
+            '<svg width="22" height="26" viewBox="0 0 24 26" fill="none" stroke="#848afc" stroke-width="1.7"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg>',
             'ปลดล็อก<br>สถานที่หลัก',
           ],
           [
-            '<svg width="26" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>',
+            '<svg width="26" height="24" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>',
             'แผนที่นำทาง<br>&amp; ข้อมูล',
           ],
           [
-            '<svg width="28" height="24" viewBox="0 0 26 22" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="7" r="3.5"/><circle cx="18" cy="8" r="2.8"/><path d="M2 20a7 7 0 0 1 14 0M15.5 14.5A5.5 5.5 0 0 1 24 19"/></svg>',
+            '<svg width="28" height="24" viewBox="0 0 26 22" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="7" r="3.5"/><circle cx="18" cy="8" r="2.8"/><path d="M2 20a7 7 0 0 1 14 0M15.5 14.5A5.5 5.5 0 0 1 24 19"/></svg>',
             'คูปองส่วนลด<br>ชุมชน',
           ],
         ],
@@ -5783,19 +5858,19 @@ img {
         code: 'FN',
         ben: [
           [
-            '<svg width="26" height="24" viewBox="0 0 24 22" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M2 8l1.6-5 17-.5L22 8M9.5 11.5v6l5-3z"/></svg>',
+            '<svg width="26" height="24" viewBox="0 0 24 22" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M2 8l1.6-5 17-.5L22 8M9.5 11.5v6l5-3z"/></svg>',
             'เลือกซีรีส์ได้<br>สูงสุด 2 เรื่อง',
           ],
           [
-            '<svg width="22" height="26" viewBox="0 0 24 26" fill="none" stroke="#7B27EA" stroke-width="1.7"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg>',
+            '<svg width="22" height="26" viewBox="0 0 24 26" fill="none" stroke="#848afc" stroke-width="1.7"><path d="M12 24S3.5 16 3.5 9.5a8.5 8.5 0 0 1 17 0C20.5 16 12 24 12 24z"/><circle cx="12" cy="9.5" r="3"/></svg>',
             'ปลดล็อก<br>ทุกสถานที่',
           ],
           [
-            '<svg width="26" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>',
+            '<svg width="26" height="24" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></svg>',
             'แผนที่เส้นทาง<br>เต็มรูปแบบ',
           ],
           [
-            '<svg width="28" height="24" viewBox="0 0 26 22" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="7" r="3.5"/><circle cx="18" cy="8" r="2.8"/><path d="M2 20a7 7 0 0 1 14 0M15.5 14.5A5.5 5.5 0 0 1 24 19"/></svg>',
+            '<svg width="28" height="24" viewBox="0 0 26 22" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linecap="round"><circle cx="9" cy="7" r="3.5"/><circle cx="18" cy="8" r="2.8"/><path d="M2 20a7 7 0 0 1 14 0M15.5 14.5A5.5 5.5 0 0 1 24 19"/></svg>',
             'คูปองส่วนลด<br>ร้านค้าชุมชน',
           ],
         ],
@@ -5809,19 +5884,19 @@ img {
         code: 'UF',
         ben: [
           [
-            '<svg width="26" height="24" viewBox="0 0 24 22" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M2 8l1.6-5 17-.5L22 8M9.5 11.5v6l5-3z"/></svg>',
+            '<svg width="26" height="24" viewBox="0 0 24 22" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><rect x="2" y="8" width="20" height="13" rx="2"/><path d="M2 8l1.6-5 17-.5L22 8M9.5 11.5v6l5-3z"/></svg>',
             'เลือกซีรีส์ได้<br>สูงสุด 3 เรื่อง',
           ],
           [
-            '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
+            '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
             'ปลดล็อก<br>เนื้อหาพิเศษ',
           ],
           [
-            '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linecap="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>',
+            '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linecap="round"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>',
             'แผนที่ +<br>Audio Guide',
           ],
           [
-            '<svg width="26" height="22" viewBox="0 0 24 20" fill="none" stroke="#7B27EA" stroke-width="1.6" stroke-linejoin="round"><path d="M2 4l5.5 5L12 1l4.5 8L22 4l-2 14H4z"/></svg>',
+            '<svg width="26" height="22" viewBox="0 0 24 20" fill="none" stroke="#848afc" stroke-width="1.6" stroke-linejoin="round"><path d="M2 4l5.5 5L12 1l4.5 8L22 4l-2 14H4z"/></svg>',
             'สิทธิ์ลุ้น<br>แฟนมีต',
           ],
         ],
@@ -6054,7 +6129,7 @@ img {
     ORDER = ['หนึ่งในร้อย', 'SHINE', 'ด้วงกับเธอ'],
     TRIP = null;
   var CLAPI =
-    '<svg width="12" height="12" viewBox="0 0 24 24"><rect x="2.5" y="9" width="19" height="12.5" rx="2" fill="#7B27EA"/><path d="M2.5 9l1.6-4.6 16.4-.4L21.5 9z" fill="#A77AF0"/></svg>';
+    '<svg width="12" height="12" viewBox="0 0 24 24"><rect x="2.5" y="9" width="19" height="12.5" rx="2" fill="#848afc"/><path d="M2.5 9l1.6-4.6 16.4-.4L21.5 9z" fill="#a893f9"/></svg>';
   // รวมซีรีส์ที่เลือกเป็นทริปเดียว (ต่อจุดตามลำดับ ORDER)
   function buildTrip(names) {
     names = ORDER.filter(function (n) {
@@ -6087,7 +6162,7 @@ img {
     var k = s[key] || s.img;
     return k && IMGS[k]
       ? '<img src="' + IMGS[k] + '" alt="">'
-      : '<span class="phx"><svg width="16" height="16" viewBox="0 0 24 26" fill="#7B27EA"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>' +
+      : '<span class="phx"><svg width="16" height="16" viewBox="0 0 24 26" fill="#848afc"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg>' +
           s.n +
           '</span>';
   }
@@ -6128,7 +6203,7 @@ img {
     document.getElementById('rvStops').innerHTML = h;
   }
   var FLAGI =
-      '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#6E22E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
+      '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#848afc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
     CHI =
       '<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>';
   var TICKI =
@@ -6378,7 +6453,7 @@ img {
       ib.classList.toggle('on');
       ib.querySelector('path').setAttribute(
         'fill',
-        ib.classList.contains('on') ? '#7B27EA' : 'none',
+        ib.classList.contains('on') ? '#848afc' : 'none',
       );
       toast(ib.classList.contains('on') ? 'บันทึกซีรีส์แล้ว' : 'นำออกจากรายการที่บันทึกแล้ว');
       return;
@@ -6998,9 +7073,9 @@ img {
     polStyle = 'lav',
     polDrawn = false;
   var FS = {
-    lav: { bg: '#FFFFFF', band: '#EDE3FD', ink: '#2A0D6E', sub: '#6E22E0', acc: '#7B27EA' },
+    lav: { bg: '#FFFFFF', band: '#ebe4fd', ink: '#2A0D6E', sub: '#848afc', acc: '#848afc' },
     cream: { bg: '#FBF6EC', band: '#F1E4CC', ink: '#4A3520', sub: '#8A6A3D', acc: '#A0522D' },
-    night: { bg: '#22153F', band: '#3A2670', ink: '#FFFFFF', sub: '#D9C8FF', acc: '#B48AF2' },
+    night: { bg: '#22153F', band: '#3A2670', ink: '#FFFFFF', sub: '#dbcdfb', acc: '#a893f9' },
   };
   // วาดกรอบโพลารอยด์ลง canvas (รูป ป้ายเขต ตราครบ ชื่อเรื่อง วันที่ โลโก้)
   function polDraw() {
@@ -7078,7 +7153,7 @@ img {
     x.beginPath();
     x.arc(0, 0, 70, 0, 7);
     x.fill();
-    x.fillStyle = s.acc === '#B48AF2' ? '#5A1BC7' : s.acc;
+    x.fillStyle = s.acc === '#a893f9' ? '#848afc' : s.acc;
     x.textAlign = 'center';
     x.font = '700 30px Prompt, Loma, sans-serif';
     x.fillText('ครบ ' + polT().total + '/' + polT().total, 0, -14);
@@ -7117,7 +7192,7 @@ img {
     );
     // logo
     x.textAlign = 'right';
-    x.fillStyle = s.acc === '#B48AF2' ? '#D9C8FF' : '#7B27EA';
+    x.fillStyle = s.acc === '#a893f9' ? '#dbcdfb' : '#848afc';
     x.font = '700 46px Prompt, Loma, sans-serif';
     x.fillText('แกะรอย', px + pw - 4, 1120);
     x.beginPath();
@@ -7251,7 +7326,7 @@ img {
       .join('');
     if (T.total > 5)
       sh +=
-        '<span style="display:flex;align-items:center;justify-content:center;background:#7B27EA;color:#fff;font-size:13px;font-weight:700">+' +
+        '<span style="display:flex;align-items:center;justify-content:center;background:#848afc;color:#fff;font-size:13px;font-weight:700">+' +
         (T.total - 5) +
         '</span>';
     document.getElementById('tdStamps').innerHTML = sh;
@@ -7632,7 +7707,7 @@ img {
         g +=
           '<path d="' +
           seg +
-          '" stroke="#7B27EA" stroke-width="4" stroke-linecap="round" class="' +
+          '" stroke="#848afc" stroke-width="4" stroke-linecap="round" class="' +
           (i + 1 === nextI ? 'rt-next' : '') +
           '" opacity="' +
           (i + 1 === nextI ? 1 : 0.35) +
@@ -7641,7 +7716,7 @@ img {
         g +=
           '<path d="' +
           seg +
-          '" stroke="#B9A2F0" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 6"/>';
+          '" stroke="#c6b0f8" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 6"/>';
     }
     // you are here
     var me;
@@ -7677,11 +7752,11 @@ img {
           p[0] +
           '" cy="' +
           (p[1] - 12) +
-          '" r="10" fill="#7B27EA" class="pulse" opacity=".5"/><path d="M' +
+          '" r="10" fill="#848afc" class="pulse" opacity=".5"/><path d="M' +
           p[0] +
           ' ' +
           (p[1] + 2) +
-          ' s-13-11-13-20 a13 13 0 0 1 26 0 c0 9-13 20-13 20z" fill="#7B27EA" stroke="#fff" stroke-width="2"/><text x="' +
+          ' s-13-11-13-20 a13 13 0 0 1 26 0 c0 9-13 20-13 20z" fill="#848afc" stroke="#fff" stroke-width="2"/><text x="' +
           p[0] +
           '" y="' +
           (p[1] - 14) +
@@ -7696,11 +7771,11 @@ img {
           p[0] +
           '" cy="' +
           p[1] +
-          '" r="8.5" fill="#fff" stroke="#7B27EA" stroke-width="2.2"/><text x="' +
+          '" r="8.5" fill="#fff" stroke="#848afc" stroke-width="2.2"/><text x="' +
           p[0] +
           '" y="' +
           (p[1] + 3.5) +
-          '" text-anchor="middle" font-size="9" font-weight="700" fill="#7B27EA" font-family="Prompt,Loma,sans-serif">' +
+          '" text-anchor="middle" font-size="9" font-weight="700" fill="#848afc" font-family="Prompt,Loma,sans-serif">' +
           (i + 1) +
           '</text></g>';
     }
@@ -7814,7 +7889,7 @@ img {
         d[0] +
         '"' +
         (d[0] === curDist ? ' class="on"' : '') +
-        '><svg width="16" height="18" viewBox="0 0 24 26" fill="#7B27EA"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg><b>' +
+        '><svg width="16" height="18" viewBox="0 0 24 26" fill="#848afc"><path d="M12 25S2.5 16 2.5 9.5a9.5 9.5 0 0 1 19 0C21.5 16 12 25 12 25zm0-12a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/></svg><b>' +
         d[0] +
         '</b>' +
         (d[1] ? '<span class="cnt">' + d[1] + ' ซีรีส์</span>' : '<small>เร็ว ๆ นี้</small>') +
