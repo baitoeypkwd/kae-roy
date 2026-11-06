@@ -117,11 +117,11 @@
   // หากเว้นว่าง จะใช้ภาพสถานที่ที่มีอยู่แล้ว
   window.KAEROY_STAMP_IMAGES = {
     // หนึ่งในร้อย
-    'มิวเซียมสยาม': '',
-    'ตึกข้างกระทรวงกลาโหม': '',
-    'หน้าวัดพระแก้ว': '',
-    'ชุมชนเลื่อนฤทธิ์': '',
-    'สวนสมเด็จพระนางเจ้าสิริกิติ์ฯ': '',
+    'มิวเซียมสยาม': 'https://i.postimg.cc/WzbMHVwZ/Watercolor-Illustration-of-Museum-Siam.png',
+    'ตึกข้างกระทรวงกลาโหม': 'https://i.postimg.cc/63H7TvCq/hn-a-klahom.png',
+    'หน้าวัดพระแก้ว': 'https://i.postimg.cc/2S4VhJ4j/Watercolor-Romance-by-the-Temple-Gate.png',
+    'ชุมชนเลื่อนฤทธิ์': 'https://i.postimg.cc/gjZYdXsX/Vintage-Deco-Plaza-Entrance.png',
+    'สวนสมเด็จพระนางเจ้าสิริกิติ์ฯ': 'https://i.postimg.cc/7ZVJjdbV/Pensive-Garden-Pond-Crossing.png',
     // SHINE
     'สะพานมหาดไทยอุทิศ': '',
     'เสาชิงช้า': '',
@@ -5017,22 +5017,42 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 .sp-get b {display:block;font-size:26px;font-weight:800;line-height:1.25;letter-spacing:-.2px;}
 
 /* แสตมป์ */
-.sp-stage {position:relative;z-index:2;display:flex;justify-content:center;margin-top:-78px;}
-.sp-stamp {width:232px;padding:12px 12px 8px;background:#fff;transform:rotate(-3deg);
-  filter:drop-shadow(0 14px 22px rgba(60,30,140,.28));
+.sp-stage {position:relative;z-index:2;display:flex;justify-content:center;margin-top:-80px;}
+.sp-pile {position:relative;}
+/* แสตมป์ใบหลัง (ให้ความรู้สึกว่าเป็นคอลเลกชัน) */
+.sp-ghost {position:absolute;inset:0;transform:rotate(6deg) translate(10px,4px);background:#e6dcfd;
+  filter:drop-shadow(0 8px 14px rgba(60,30,140,.16));
+  -webkit-mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 6px,#0000 96%,#000) -8px -8px/16px 16px round;
+  mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 6px,#0000 96%,#000) -8px -8px/16px 16px round;padding:10px;}
+.sp-stamp {position:relative;width:236px;padding:10px;background:#fffdf8;transform:rotate(-3deg);
+  filter:drop-shadow(0 16px 24px rgba(60,30,140,.3));
   -webkit-mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 6px,#0000 96%,#000) -8px -8px/16px 16px round;
   mask:linear-gradient(#000 0 0) content-box,radial-gradient(circle 6px,#0000 96%,#000) -8px -8px/16px 16px round;}
-.sp-in {position:relative;height:250px;border-radius:6px;overflow:hidden;background:#efe9fd;outline:2px solid #e6dcfc;outline-offset:-2px;}
+.sp-frame {position:relative;padding:8px 8px 6px;border-radius:4px;
+  background:
+    radial-gradient(circle at 1px 1px,rgba(255,255,255,.35) 1px,transparent 1.2px) 0 0/6px 6px,
+    linear-gradient(160deg,#a893f9 0%,#967bfe 55%,#848afc 100%);}
+.sp-frame:before {content:"";position:absolute;inset:3px;border:1px solid rgba(255,255,255,.55);border-radius:3px;pointer-events:none;}
+.sp-hd {display:flex;align-items:center;justify-content:space-between;padding:0 2px 6px;color:#fff;}
+.sp-brand {display:flex;align-items:center;gap:4px;font-family:Manrope,Arial,sans-serif;font-size:11px;font-weight:800;letter-spacing:2.5px;}
+.sp-brand svg {width:12px;height:12px;}
+.sp-no {font-family:Manrope,Arial,sans-serif;font-size:10px;font-weight:700;letter-spacing:.5px;opacity:.95;}
+.sp-no b {font-size:15px;font-weight:800;margin-left:1px;}
+.sp-in {position:relative;height:196px;border-radius:3px;overflow:hidden;background:#efe9fd;border:3px solid #fff;}
 .sp-in img {width:100%;height:100%;object-fit:cover;display:block;}
-.sp-in:after {content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,20,90,0) 50%,rgba(40,20,90,.78) 100%);}
-.sp-name {position:absolute;left:12px;right:12px;bottom:12px;z-index:1;color:#fff;}
-.sp-name b {display:block;font-size:20px;font-weight:800;line-height:1.2;text-shadow:0 2px 8px rgba(20,8,60,.4);}
-.sp-name i {display:block;margin-top:2px;font-size:12px;font-weight:600;font-style:italic;opacity:.92;}
-.sp-name i:empty {display:none;}
-.sp-foot {display:flex;align-items:center;justify-content:center;gap:5px;padding:9px 0 4px;font-size:12.5px;font-weight:800;color:#6d55e8;}
-.sp-foot svg {width:15px;height:15px;}
-.sp-mark {position:absolute;left:calc(50% + 72px);top:-18px;width:92px;height:92px;color:#6d55e8;opacity:.85;transform:rotate(14deg);
-  background:rgba(255,255,255,.55);border-radius:50%;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);}
+.sp-shine {position:absolute;inset:0;background:linear-gradient(125deg,rgba(255,255,255,.28) 0%,rgba(255,255,255,0) 38%);pointer-events:none;}
+.sp-cap {margin-top:7px;padding:8px 10px 7px;border-radius:3px;background:#fff;text-align:center;}
+.sp-cap b {display:block;font-size:18px;font-weight:800;line-height:1.2;color:#1a0b39;}
+.sp-cap i {display:block;margin-top:1px;font-family:Manrope,Arial,sans-serif;font-size:10.5px;font-weight:700;font-style:normal;
+  letter-spacing:1.8px;text-transform:uppercase;color:#848afc;}
+.sp-cap i:empty {display:none;}
+.sp-foot {display:flex;align-items:center;gap:5px;padding:6px 3px 0;font-size:11px;font-weight:750;color:#fff;}
+.sp-foot svg {width:13px;height:13px;flex-shrink:0;}
+.sp-foot span {flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sp-foot em {font-style:normal;font-size:10px;font-weight:800;opacity:.85;}
+/* ตราประทับไปรษณีย์ (วงกลม + เส้นคลื่น) */
+.sp-mark {position:absolute;left:calc(50% + 18px);top:52px;width:140px;height:82px;color:#4c33c4;opacity:.55;transform:rotate(-14deg);
+  pointer-events:none;}
 
 /* ความคืบหน้าทริป */
 .sp-prog {margin:22px 16px 0;padding:14px 16px;border-radius:20px;background:#fff;box-shadow:0 10px 26px rgba(132,138,252,.13);}
@@ -5625,20 +5645,33 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
         <path d="M300 30l2.4 5.6 5.6 2.4-5.6 2.4-2.4 5.6-2.4-5.6-5.6-2.4 5.6-2.4z" fill="#fff"/><path d="M88 96l1.8 4.2 4.2 1.8-4.2 1.8-1.8 4.2-1.8-4.2-4.2-1.8 4.2-1.8z" fill="#fff" opacity=".8"/></g></svg>
     </div>
     <div class="sp-stage">
+      <div class="sp-pile">
+      <div class="sp-ghost" aria-hidden="true"></div>
       <div class="sp-stamp">
-        <div class="sp-in">
-          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" id="stImg">
-          <div class="sp-name"><b id="stName"></b><i id="stEn"></i></div>
+        <div class="sp-frame">
+          <div class="sp-hd"><span class="sp-brand"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 22s-7.5-6.6-7.5-12.2a7.5 7.5 0 0 1 15 0C19.5 15.4 12 22 12 22z"/><circle cx="12" cy="9.8" r="2.7" fill="#fff"/></svg>KAEROY</span><span class="sp-no">No.<b id="stNo">01</b></span></div>
+          <div class="sp-in">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" id="stImg">
+            <i class="sp-shine" aria-hidden="true"></i>
+          </div>
+          <div class="sp-cap"><b id="stName"></b><i id="stEn"></i></div>
+          <div class="sp-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M3.4 9 4.6 4.8l15.6-1.9.8 4.1L3.4 9zM8.2 4.2l2.4 3.9M13.4 3.6l2.4 3.9"/></svg><span id="stSer">เรื่องหนึ่งในร้อย</span><em>แกะรอย</em></div>
         </div>
-        <div class="sp-foot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M3.4 9 4.6 4.8l15.6-1.9.8 4.1L3.4 9zM8.2 4.2l2.4 3.9M13.4 3.6l2.4 3.9"/></svg><span id="stSer">เรื่องหนึ่งในร้อย</span></div>
       </div>
-      <svg class="sp-mark" viewBox="0 0 100 100" aria-hidden="true">
-        <defs><path id="spArc" d="M50 50m-34 0a34 34 0 1 1 68 0a34 34 0 1 1-68 0"/></defs>
-        <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="2.4"/>
-        <circle cx="50" cy="50" r="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-dasharray="3 3"/>
-        <text font-size="10.5" font-weight="800" fill="currentColor" letter-spacing="2" font-family="Noto Sans Thai,Manrope,sans-serif"><textPath href="#spArc">KAEROY · แกะรอย · KAEROY · แกะรอย ·</textPath></text>
-        <text x="50" y="47" text-anchor="middle" font-size="9" font-weight="800" fill="currentColor" font-family="Noto Sans Thai,Manrope,sans-serif">จุดที่</text>
-        <text x="50" y="61" text-anchor="middle" font-size="14" font-weight="800" fill="currentColor" font-family="Manrope,sans-serif" id="stStop">1/5</text>
+      </div>
+      <svg class="sp-mark" viewBox="0 0 170 100" aria-hidden="true">
+        <defs><path id="spArc" d="M50 50m-33 0a33 33 0 1 1 66 0a33 33 0 1 1-66 0"/></defs>
+        <g fill="none" stroke="currentColor" stroke-linecap="round">
+          <path d="M92 30c8-5 14 5 22 0s14 5 22 0 14 5 22 0" stroke-width="2.4"/>
+          <path d="M96 42c8-5 14 5 22 0s14 5 22 0 14 5 22 0" stroke-width="2.4"/>
+          <path d="M96 54c8-5 14 5 22 0s14 5 22 0 14 5 22 0" stroke-width="2.4"/>
+          <path d="M92 66c8-5 14 5 22 0s14 5 22 0 14 5 22 0" stroke-width="2.4"/>
+          <circle cx="50" cy="50" r="44" stroke-width="2.6"/>
+          <circle cx="50" cy="50" r="24" stroke-width="1.5"/>
+        </g>
+        <text font-size="9.5" font-weight="800" fill="currentColor" letter-spacing="2.2" font-family="Manrope,Arial,sans-serif"><textPath href="#spArc">KAEROY ✦ PHRA NAKHON ✦ KAEROY ✦</textPath></text>
+        <text x="50" y="46" text-anchor="middle" font-size="8" font-weight="800" fill="currentColor" letter-spacing="1" font-family="Manrope,Arial,sans-serif">SPOT</text>
+        <text x="50" y="60" text-anchor="middle" font-size="14" font-weight="800" fill="currentColor" font-family="Manrope,Arial,sans-serif" id="stStop">1/5</text>
       </svg>
     </div>
     <div class="sp-prog">
@@ -6833,6 +6866,7 @@ document.querySelectorAll('img[data-soon]').forEach(function(e){
     document.getElementById('stEn').textContent = s.en && s.en !== s.name ? s.en : '';
     document.getElementById('stSer').textContent = 'เรื่อง' + st.series;
     document.getElementById('stStop').textContent = curStop + '/' + TRIP.total;
+    document.getElementById('stNo').textContent = ('0' + curStop).slice(-2);
     document.getElementById('mission').scrollTop = 0;
     mReset();
   }
