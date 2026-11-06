@@ -16,6 +16,7 @@
    - KAEROY_COMING_SOON_IMAGES : ลิงก์ภาพการ์ด "เร็ว ๆ นี้" 2 เรื่องในหน้าสร้างทริป (ใส่ตรงต้นไฟล์)
    - KAEROY_PLACE_IMAGES       : ลิงก์ภาพสถานที่ 5 จุดในเส้นทาง "หนึ่งในร้อย" (ใส่ตรงต้นไฟล์)
    - KAEROY_STAMP_IMAGES       : ลิงก์ภาพในแสตมป์ดิจิทัลของแต่ละสถานที่ (ใส่ตรงต้นไฟล์)
+   - KAEROY_SCENE_IMAGES       : ลิงก์ภาพ "ฉากในซีรีส์" ในหน้าภารกิจของแต่ละสถานที่ (ใส่ตรงต้นไฟล์)
    - KAEROY_BANNER_IMAGES      : ลิงก์ภาพแบนเนอร์ลุ้นแฟนมีต (ใส่ตรงต้นไฟล์)
    - ROUTES  : ข้อมูลเส้นทาง/สถานที่ของแต่ละซีรีส์
    - PK      : ข้อมูลแพ็กเกจ (ชื่อ ราคา จำนวนซีรีส์ที่เลือกได้)
@@ -98,6 +99,17 @@
       'https://i.postimg.cc/hGYs8NB3/lokhech-n-hn-ngnir-xy-1-1536x1024.jpg',   // 4. ชุมชนเลื่อนฤทธิ์
       'https://i.postimg.cc/cC2FsjD6/images.jpg'    // 5. สวนสมเด็จพระนางเจ้าสิริกิติ์ฯ
     ]
+  };
+
+  // ===== SCENE_IMAGE_URLS / ภาพ "ฉากในซีรีส์" ในหน้าภารกิจ (ช่องถ่ายรูปตามฉาก) =====
+  // ใส่ลิงก์ตรง .jpg/.png/.webp ตามชื่อสถานที่ แนะนำภาพแนวนอน 16 : 9
+  // หากเว้นว่าง จะใช้ภาพเดียวกับรายการเส้นทางในหน้า My Trips
+  window.KAEROY_SCENE_IMAGES = {
+    'มิวเซียมสยาม': 'https://i.postimg.cc/ryR3f93k/anong-miu.jpg',
+    'ตึกข้างกระทรวงกลาโหม': '',
+    'หน้าวัดพระแก้ว': 'https://i.postimg.cc/WzqnSX4V/anongwat.jpg',
+    'ชุมชนเลื่อนฤทธิ์': '',
+    'สวนสมเด็จพระนางเจ้าสิริกิติ์ฯ': ''
   };
 
   // ===== STAMP_IMAGE_URLS / ภาพในแสตมป์ดิจิทัลของแต่ละสถานที่ (หน้ารับแสตมป์ + แสตมป์จิ๋วในหน้าภารกิจ) =====
@@ -6802,8 +6814,14 @@ document.querySelectorAll('img[data-soon]').forEach(function(e){
     ep.style.display = st.ep ? '' : 'none';
     // ภาพฉาก = ภาพเดียวกับในรายการเส้นทางหน้า My Trips (รวมลิงก์ใน KAEROY_PLACE_IMAGES)
     var sc = document.getElementById('mEx1');
+    var su = (window.KAEROY_SCENE_IMAGES || {})[s.name];
     sc.dataset.fb = st.img || '';
-    sc.src = IMGS[st.img] || IMGS[s.angle] || '';
+    sc.onerror = null;
+    if (typeof su === 'string' && /^https?:\/\//i.test(su.trim())) {
+      // ภาพฉากเฉพาะของหน้าภารกิจ (โหลดไม่ได้จะกลับไปใช้ภาพจากหน้า My Trips)
+      sc.onerror = function () { sc.onerror = null; sc.src = IMGS[st.img] || IMGS[s.angle] || ''; };
+      sc.src = su.trim();
+    } else sc.src = IMGS[st.img] || IMGS[s.angle] || '';
     document.getElementById('mUpload').value = '';
     mPhotoShow(PHOTOS[curStop]);
     setStampImg(document.getElementById('mMiniImg'), s);
